@@ -1,4 +1,5 @@
 import React from "react";
+import PageHeader from './components/pageheader.js';
 import Nav from './components/nav';
 import './App.css';
 import "antd/dist/antd.css";
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <div className="App">
+      <PageHeader/>
       <Nav/>
     </div>
   );
