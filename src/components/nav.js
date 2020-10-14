@@ -20,7 +20,7 @@ export default function Nav(props) {
   let navCSS = {
     backgroundColor: 'LightCyan',
     color: 'Teal',
-    fontSize: 16,
+    fontSize: 17,
     padding: 12
   }
 
