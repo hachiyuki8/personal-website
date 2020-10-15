@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HomeOutlined, ReadOutlined, FileDoneOutlined, ContactsOutlined } from '@ant-design/icons';
+import { IdcardOutlined, ReadOutlined, TeamOutlined, FileDoneOutlined} from '@ant-design/icons';
 import { Menu } from 'antd';
 
 
@@ -33,18 +33,18 @@ export default function Nav(props) {
         mode="horizontal"
         style={navCSS}
       >
-        <Menu.Item key="about" icon={<HomeOutlined />}>
+        <Menu.Item key="about" icon={<IdcardOutlined />}>
           About
         </Menu.Item>
         <Menu.Item key="education" icon={<ReadOutlined />}>
           Education
         </Menu.Item>
+        <Menu.Item key="education" icon={<TeamOutlined />}>
+          Experience
+        </Menu.Item>
         <Menu.Item key="project" icon={<FileDoneOutlined />}>
           Project
           </Menu.Item>
-        <Menu.Item key="contact" icon={<ContactsOutlined />}>
-          Contact
-        </Menu.Item>
       </Menu>
     </>
   )
