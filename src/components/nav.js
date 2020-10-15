@@ -42,8 +42,8 @@ export default function Nav(props) {
         <Menu.Item key="education" icon={<TeamOutlined />}>
           Experience
         </Menu.Item>
-        <Menu.Item key="project" icon={<FileDoneOutlined />}>
-          Project
+        <Menu.Item key="projects" icon={<FileDoneOutlined />}>
+          Projects
           </Menu.Item>
       </Menu>
     </>

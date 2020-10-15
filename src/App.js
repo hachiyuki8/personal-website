@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <h1 style={titleCSS}>Joanna Yao</h1>
       <Nav style={{float: 'left'}}/>
-      <Skills style={{paddingLeft: 36}}/>
+      <Skills/>
     </div>
   );
 }

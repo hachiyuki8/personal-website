@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Card, Col, Row } from 'antd';
 
 
@@ -13,12 +13,16 @@ export default function Skills() {
     backgroundColor: 'Azure',
     color: 'DarkSlateGrey',
     fontSize: 15,
-    padding: 6,
-    textAlign: 'center'
+    paddingTop: 5,
+    paddingBottom: 5,
+    textAlign: 'left'
   }
 
   let gridStyle = {
+    width: "50%",
     minWidth: 400,
+    paddingTop: 30,
+    paddingBottom: 30,
     overflow: "auto",
     textOverflow: "ellipsis",
   };
@@ -27,7 +31,7 @@ export default function Skills() {
     // your jsx. there must be a single parent tag
     <>
       <div className="site-card-border-less-wrapper">
-        <Row gutter={160}>
+        <Row gutter={160} justify="center">
           <Col span={6} style={gridStyle}>
             <Card title="Language" bordered={false} style={cardCSS}>
               <ul>
@@ -47,7 +51,7 @@ export default function Skills() {
           </Col>
 
           <Col span={6} style={gridStyle}>
-            <Card title="Others" bordered={false} style={cardCSS}>
+            <Card title="Software" bordered={false} style={cardCSS}>
               <ul>
                 <li>Adobe: Premiere, InDesign, Photoshop, After Effect </li><br/>
                 <li>Microsoft Office: <br/> Word, Excel, PowerPoint </li><br/>
