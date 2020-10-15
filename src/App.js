@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from './components/nav';
+import Skills from './components/skills';
 import "antd/dist/antd.css";
 import "./index.css";
 import './App.css';
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <h1 style={titleCSS}>Joanna Yao</h1>
       <Nav style={{float: 'left'}}/>
+      <Skills style={{paddingLeft: 36}}/>
     </div>
   );
 }

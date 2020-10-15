@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.site-card-border-less-wrapper {
+  padding: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: darkcyan;
+}
+
+.ant-card-head-title {
+  color: DarkSlateGrey;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ant-card-body {
+  height: 240px;
+}
