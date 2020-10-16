@@ -1,25 +1,44 @@
 import React from 'react';
-
+import { Card, Avatar } from 'antd';
+import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 
 
 export default function Basics() {
   let cardCSS = {
-    backgroundColor: 'Azure',
-    color: 'DarkSlateGrey',
+    backgroundColor: 'DarkCyan',
+    color: 'Azure',
     width: '50%',
     minWidth: 300,
     overflow: 'auto',
     textOverflow: 'ellipsis',
-    fontSize: 15,
-    paddingTop: 5,
-    paddingBottom: 5,
+    float: 'right',
+    fontSize: 20,
+    paddingTop: 100,
+    paddingRight: 500,
+    paddingBottom: 400,
     textAlign: 'left',
-    borderRadius: 24
   }
+
+  const { Meta } = Card;
 
   return (
     <>
-      Carnegie Mellon University Class of 2023
+      <Card
+        style={{ width: 400, float: "right" }}
+        actions={[
+          <SettingOutlined key="setting" />,
+          <EditOutlined key="edit" />,
+          <EllipsisOutlined key="ellipsis" />,
+          <EllipsisOutlined key="ellipsis" />,
+          <EllipsisOutlined key="ellipsis" />
+        ]}
+      >
+        <Meta
+          avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+          title="Card title"
+          description="This is the description"
+        />
+      </Card>
     </>
   )
 }

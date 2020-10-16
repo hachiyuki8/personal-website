@@ -36,20 +36,27 @@ let photoCSS = {
 let skillsCSS = {
   backgroundColor: 'Azure',
   color: 'Teal',
-  fontSize: 50,
+  fontSize: 48,
   fontWeight: 'bold',
   float: 'left',
-  paddingTop: 50,
-  paddingLeft: 120,
-  letterSpacing: 4
+  marginTop: 60,
+  marginLeft: 100,
+  letterSpacing: 4,
+  padding: 20,
+  borderRadius: 20,
+  borderStyle: "outset",
+  borderColor: "Powderblue",
+  borderWidth: 8,
 }
 
 function App() {
   return (
     <div className="App" style={backGroundCSS}>
-      <h1 style={titleCSS}>Joanna Yao</h1>
-      <Nav style={{float: 'left'}}/>
-      <div>
+      <div style={{position:"fixed",width:"100%"}}>
+        <h1 style={titleCSS}>Joanna Yao</h1>
+        <Nav style={{float: 'left'}}/>
+      </div>
+      <div style={{paddingTop:60}}>
         <img alt="loading" style={photoCSS} src={Photo}/>
         <Basics/>
       </div>

@@ -38,12 +38,17 @@
   }
 }
 
+.ant-menu{
+  width: 100%;
+}
+
 .site-card-border-less-wrapper {
   width: 100%;
   padding: 60px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 140px;
+  padding-top: 210px;
+  padding-bottom: 120px;
   background: Azure;
 }
 
