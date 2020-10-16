@@ -1,6 +1,6 @@
 .App {
-  /* text-align: center; */
-  font: normal 16px Cambria
+  font: normal 16px Cambria;
+  letter-spacing: 0.2px;
 }
 
 .App-logo {
@@ -39,19 +39,28 @@
 }
 
 .site-card-border-less-wrapper {
+  width: 100%;
   padding: 60px;
   padding-left: 100px;
   padding-right: 100px;
-  background: darkcyan;
+  padding-top: 140px;
+  background: Azure;
 }
 
 .ant-card-head-title {
-  color: DarkSlateGrey;
+  color: azure;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .ant-card-body {
   height: 250px;
+  font-size: 17px;
+}
+
+.ant-list.ant-list-split{
+  width: 100px;
+  float: "left";
 }

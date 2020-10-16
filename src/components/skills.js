@@ -4,23 +4,23 @@ import { Card, Col, Row } from 'antd';
 
 export default function Skills() {
   let cardCSS = {
-    backgroundColor: 'Azure',
-    color: 'DarkSlateGrey',
-    fontSize: 15,
+    backgroundColor: 'DarkCyan',
+    color: 'Azure',
+    fontSize: 20,
     paddingTop: 5,
     paddingBottom: 5,
+    paddingRight: 10,
     textAlign: 'left',
-    borderRadius: 24
+    borderRadius: 24,
+    overflow: 'scroll',
+    textOverflow: 'ellipsis',
   }
   
   let gridStyle = {
-    fontSize: 14,
     width: '50%',
     minWidth: 400,
     paddingTop: 30,
     paddingBottom: 30,
-    overflow: 'auto',
-    textOverflow: 'ellipsis',
   };
 
   return (
@@ -39,7 +39,7 @@ export default function Skills() {
           <Col span={6} style={gridStyle}>
             <Card title="Programming" bordered={false} style={cardCSS}>
               <ul>
-                <li>Language: Python, C, R, <br/>
+                <li>Language: Python, C, R,
                     JavaScript, HTML/CSS </li> <br/><br/>
                 <li>Framework: PyTorch, React </li>
               </ul>
@@ -49,9 +49,9 @@ export default function Skills() {
           <Col span={6} style={gridStyle}>
             <Card title="Software" bordered={false} style={cardCSS}>
               <ul>
+                <li>Unreal Engine (UE4)</li><br/>
                 <li>Adobe: Premiere, InDesign, Photoshop, After Effect </li><br/>
-                <li>Microsoft Office: <br/> Word, Excel, PowerPoint </li><br/>
-                <li>Unreal Engine (UE4)</li>
+                <li>Microsoft Office: <br/> Word, Excel, PowerPoint </li>
               </ul>
             </Card>
           </Col>
