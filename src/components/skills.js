@@ -14,6 +14,7 @@ export default function Skills() {
   }
   
   let gridStyle = {
+    fontSize: 14,
     width: '50%',
     minWidth: 400,
     paddingTop: 30,
@@ -38,7 +39,8 @@ export default function Skills() {
           <Col span={6} style={gridStyle}>
             <Card title="Programming" bordered={false} style={cardCSS}>
               <ul>
-                <li>Language: Python, C, R, JavaScript, HTML/CSS </li> <br/><br/>
+                <li>Language: Python, C, R, <br/>
+                    JavaScript, HTML/CSS </li> <br/><br/>
                 <li>Framework: PyTorch, React </li>
               </ul>
             </Card>

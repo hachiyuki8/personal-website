@@ -12,7 +12,7 @@ let titleCSS = {
   fontSize: 24,
   fontWeight: 'bold',
   float: 'left',
-  paddingTop: 17,
+  paddingTop: 20,
   paddingLeft: 36,
   paddingRight: 16
 }
