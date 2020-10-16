@@ -44,8 +44,8 @@ export default function Skills() {
           <Col span={6} style={gridStyle}>
             <Card title="Programming" bordered={false} style={cardCSS}>
               <ul>
-                <li>Language: Python, C, R </li> <br/><br/>
-                <li>Framework: PyTorch </li>
+                <li>Language: Python, C, R, JavaScript, HTML/CSS </li> <br/><br/>
+                <li>Framework: PyTorch, React </li>
               </ul>
             </Card>
           </Col>
