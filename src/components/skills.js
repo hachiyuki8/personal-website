@@ -9,11 +9,12 @@ export default function Skills() {
     fontSize: 20,
     paddingTop: 5,
     paddingBottom: 5,
-    paddingRight: 10,
     textAlign: 'left',
+    fontWeight: 'bold',
     borderRadius: 24,
     overflow: 'scroll',
     textOverflow: 'ellipsis',
+    letterSpacing: 0.4,
   }
   
   let gridStyle = {
@@ -26,7 +27,7 @@ export default function Skills() {
   return (
     <>
       <div className="site-card-border-less-wrapper">
-        <Row gutter={160} justify="center">
+        <Row gutter={120} justify="center">
           <Col span={6} style={gridStyle}>
             <Card title="Language" bordered={false} style={cardCSS}>
               <ul>

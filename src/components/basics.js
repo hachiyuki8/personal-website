@@ -1,44 +1,46 @@
 import React from 'react';
-import { Card, Avatar } from 'antd';
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-
+import { Divider } from 'antd';
 
 export default function Basics() {
   let cardCSS = {
+    marginLeft: 100,
+    marginTop: 100,
     backgroundColor: 'DarkCyan',
     color: 'Azure',
-    width: '50%',
     minWidth: 300,
     overflow: 'auto',
     textOverflow: 'ellipsis',
-    float: 'right',
-    fontSize: 20,
-    paddingTop: 100,
-    paddingRight: 500,
-    paddingBottom: 400,
+    fontSize: 18,
+    fontWeight: "bold",
     textAlign: 'left',
+    width: "30%",
+    height: 400,
+    float: "left",
+    borderRadius: 24,
+    borderStyle: "outset",
+    borderColor: "Cadetblue",
+    borderWidth: 10,
+    padding: 20,
+    letterSpacing: 0.4,
   }
 
-  const { Meta } = Card;
 
   return (
     <>
-      <Card
-        style={{ width: 400, float: "right" }}
-        actions={[
-          <SettingOutlined key="setting" />,
-          <EditOutlined key="edit" />,
-          <EllipsisOutlined key="ellipsis" />,
-          <EllipsisOutlined key="ellipsis" />,
-          <EllipsisOutlined key="ellipsis" />
-        ]}
-      >
-        <Meta
-          avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-          title="Card title"
-          description="This is the description"
-        />
-      </Card>
+      <div style={cardCSS}>
+        <p>
+          Joanna Yao (She/Her/Hers)
+        </p>
+        <Divider/>
+        <p>
+          Carnegie Mellon University Class of 2023
+        </p>
+        <Divider/>
+        <p>
+          Email: xinyao@andrew.cmu.edu
+        </p>
+        <Divider/>
+      </div>
     </>
   )
 }

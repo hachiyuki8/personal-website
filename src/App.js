@@ -26,11 +26,10 @@ let backGroundCSS = {
 let photoCSS = {
   textAlign: "left",
   margin: 100,
+  marginLeft: 150,
   height: 400,
   borderRadius: 24,
-  borderStyle: "solid",
-  borderColor: "CadetBlue",
-  borderWidth: 6,
+  float: "left"
 }
 
 let skillsCSS = {
@@ -39,14 +38,21 @@ let skillsCSS = {
   fontSize: 48,
   fontWeight: 'bold',
   float: 'left',
-  marginTop: 60,
-  marginLeft: 100,
+  marginTop: 80,
+  marginLeft: 150,
   letterSpacing: 4,
   padding: 20,
   borderRadius: 20,
   borderStyle: "outset",
   borderColor: "Powderblue",
   borderWidth: 8,
+}
+
+let divCSS = {
+  minWidth: 300,
+  overflow: 'auto',
+  textOverflow: 'ellipsis',
+  padding:60
 }
 
 function App() {
@@ -56,7 +62,7 @@ function App() {
         <h1 style={titleCSS}>Joanna Yao</h1>
         <Nav style={{float: 'left'}}/>
       </div>
-      <div style={{paddingTop:60}}>
+      <div style={divCSS}>
         <img alt="loading" style={photoCSS} src={Photo}/>
         <Basics/>
       </div>
