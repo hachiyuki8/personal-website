@@ -3,12 +3,6 @@ import { Card, Col, Row } from 'antd';
 
 
 export default function Skills() {
-  // Define state vars
-  useEffect(() => {
-    // things to do whenever the component reloads
-    // such as calling a backend api and fetching data
-  });
-
   let cardCSS = {
     backgroundColor: 'Azure',
     color: 'DarkSlateGrey',
@@ -28,7 +22,6 @@ export default function Skills() {
   };
 
   return (
-    // your jsx. there must be a single parent tag
     <>
       <div className="site-card-border-less-wrapper">
         <Row gutter={160} justify="center">
