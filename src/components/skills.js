@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Card, Col, Row } from 'antd';
 
 
@@ -9,16 +9,17 @@ export default function Skills() {
     fontSize: 15,
     paddingTop: 5,
     paddingBottom: 5,
-    textAlign: 'left'
+    textAlign: 'left',
+    borderRadius: 24
   }
-
+  
   let gridStyle = {
-    width: "50%",
+    width: '50%',
     minWidth: 400,
     paddingTop: 30,
     paddingBottom: 30,
-    overflow: "auto",
-    textOverflow: "ellipsis",
+    overflow: 'auto',
+    textOverflow: 'ellipsis',
   };
 
   return (
