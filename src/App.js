@@ -10,13 +10,12 @@ import './App.css';
 let titleCSS = {
   backgroundColor: 'LightCyan',
   color: 'Teal',
-  fontSize: 24,
-  fontWeight: 'bold',
   float: 'left',
   paddingTop: 20,
   paddingLeft: 36,
   paddingRight: 16,
-  letterSpacing: 1.5
+  letterSpacing: 1.5,
+  font:"bold 24px Cambria"
 }
 
 let backGroundCSS = {
@@ -35,8 +34,6 @@ let photoCSS = {
 let skillsCSS = {
   backgroundColor: 'Azure',
   color: 'Teal',
-  fontSize: 48,
-  fontWeight: 'bold',
   float: 'left',
   marginTop: 80,
   marginLeft: 150,
@@ -46,13 +43,15 @@ let skillsCSS = {
   borderStyle: "outset",
   borderColor: "Powderblue",
   borderWidth: 8,
+  font:"bold 48px Cambria"
 }
 
 let divCSS = {
   minWidth: 300,
   overflow: 'auto',
   textOverflow: 'ellipsis',
-  padding:60
+  paddingTop: 100,
+  paddingBottom: 60,
 }
 
 function App() {
@@ -62,10 +61,15 @@ function App() {
         <h1 style={titleCSS}>Joanna Yao</h1>
         <Nav style={{float: 'left'}}/>
       </div>
+
       <div style={divCSS}>
         <img alt="loading" style={photoCSS} src={Photo}/>
-        <Basics/>
+        <div>
+          <Basics/>
+        </div>
       </div>
+      
+
       <h1 style={skillsCSS}>Skills</h1>
       <Skills/>
     </div>

@@ -12,7 +12,6 @@ export default function Skills() {
     textAlign: 'left',
     fontWeight: 'bold',
     borderRadius: 24,
-    overflow: 'scroll',
     textOverflow: 'ellipsis',
     letterSpacing: 0.4,
   }
