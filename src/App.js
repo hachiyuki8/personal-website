@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from './components/nav';
-import Photo from './photo.jpeg'; 
+import Photo from './photo.jpeg';
 import Basics from "./components/basics";
 import Skills from './components/skills';
 import "antd/dist/antd.css";
@@ -15,11 +15,12 @@ let titleCSS = {
   paddingLeft: 36,
   paddingRight: 16,
   letterSpacing: 1.5,
-  font:"bold 24px Cambria"
+  font: "bold 24px Cambria",
 }
 
 let backGroundCSS = {
-  backgroundColor: 'darkcyan'
+  backgroundColor: 'darkcyan',
+  width: "100%"
 }
 
 let photoCSS = {
@@ -43,7 +44,7 @@ let skillsCSS = {
   borderStyle: "outset",
   borderColor: "Powderblue",
   borderWidth: 8,
-  font:"bold 48px Cambria"
+  font: "bold 48px Cambria"
 }
 
 let divCSS = {
@@ -57,21 +58,21 @@ let divCSS = {
 function App() {
   return (
     <div className="App" style={backGroundCSS}>
-      <div style={{position:"fixed",width:"100%"}}>
+      <div style={{ zIndex: 1, position: "fixed", width: "100%", overflow: 'auto' }}>
         <h1 style={titleCSS}>Joanna Yao</h1>
-        <Nav style={{float: 'left'}}/>
+        <Nav style={{ float: 'left', backgroundColor: 'Azure' }} />
       </div>
 
       <div style={divCSS}>
-        <img alt="loading" style={photoCSS} src={Photo}/>
+        <img alt="loading" style={photoCSS} src={Photo} />
         <div>
-          <Basics/>
+          <Basics />
         </div>
       </div>
-      
+
 
       <h1 style={skillsCSS}>Skills</h1>
-      <Skills/>
+      <Skills />
     </div>
   );
 }

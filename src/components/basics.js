@@ -6,7 +6,7 @@ export default function Basics() {
   let listCSS = {
     backgroundColor: 'LightCyan',
     color: 'DarkCyan',
-    minWidth: 480,
+    minWidth: 450,
     overflow: 'auto',
     textOverflow: 'ellipsis',
     fontSize: 18,
@@ -41,7 +41,7 @@ export default function Basics() {
         </List.Item>
         <List.Item>
           <List.Icon name='book'/>
-          <List.Content>Statistic and Machine Learning</List.Content>
+          <List.Content>Statistics and Machine Learning</List.Content>
         </List.Item>
         <List.Item>
           <List.Icon name='mail' />

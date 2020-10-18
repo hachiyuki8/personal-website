@@ -24,6 +24,7 @@ export default function Nav(props) {
     fontWeight: 'bold',
     padding: 12,
     letterSpacing: 0.4,
+    minWidth: 800,
   }
 
   return (
