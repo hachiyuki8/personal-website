@@ -1,5 +1,4 @@
 import React from 'react';
-import { Divider } from 'antd';
 import { List } from 'semantic-ui-react'
 
 export default function Basics() {
@@ -22,6 +21,8 @@ export default function Basics() {
     padding: 25,
     letterSpacing: 0.4,
     margin: 100,
+    marginLeft: 200,
+    marginRight: 200
   }
 
   return (
