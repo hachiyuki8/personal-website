@@ -20,14 +20,14 @@ let titleCSS = {
 
 let backGroundCSS = {
   backgroundColor: 'darkcyan',
-  width: "100%"
+  width: "100%",
 }
 
 let photoCSS = {
   textAlign: "left",
-  margin: 100,
-  marginLeft: 150,
-  height: 400,
+  margin: "100px",
+  marginLeft: "150px",
+  height: "400px",
   borderRadius: 24,
   float: "left"
 }
@@ -48,11 +48,10 @@ let skillsCSS = {
 }
 
 let divCSS = {
-  minWidth: 300,
   overflow: 'auto',
-  textOverflow: 'ellipsis',
   paddingTop: 100,
   paddingBottom: 60,
+  width: "100%",
 }
 
 function App() {
@@ -65,11 +64,8 @@ function App() {
 
       <div style={divCSS}>
         <img alt="loading" style={photoCSS} src={Photo} />
-        <div>
-          <Basics />
-        </div>
+        <Basics/>
       </div>
-
 
       <h1 style={skillsCSS}>Skills</h1>
       <Skills />

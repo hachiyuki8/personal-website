@@ -6,7 +6,7 @@ export default function Basics() {
   let listCSS = {
     backgroundColor: 'LightCyan',
     color: 'DarkCyan',
-    minWidth: 450,
+    minWidth: 480,
     overflow: 'auto',
     textOverflow: 'ellipsis',
     fontSize: 18,
