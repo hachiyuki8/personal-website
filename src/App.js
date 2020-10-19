@@ -3,6 +3,8 @@ import Nav from './components/nav';
 import Photo from './photo.jpeg';
 import Basics from "./components/basics";
 import Skills from './components/skills';
+import Links from './components/links';
+import { Card, Col, Row } from 'antd';
 import "antd/dist/antd.css";
 import "./index.css";
 import './App.css';
@@ -21,15 +23,16 @@ let titleCSS = {
 let backGroundCSS = {
   backgroundColor: 'darkcyan',
   width: "100%",
+  overflowX: 'hidden'
 }
 
 let photoCSS = {
-  textAlign: "left",
-  margin: "100px",
-  marginLeft: "150px",
   height: "400px",
+  minWidth: "300px",
   borderRadius: 24,
-  float: "left"
+  width: '45%',
+  display: 'block',
+  margin: 'auto'
 }
 
 let skillsCSS = {
@@ -47,25 +50,32 @@ let skillsCSS = {
   font: "bold 48px Trebuchet MS"
 }
 
-let divCSS = {
-  overflow: 'auto',
-  paddingTop: 100,
-  paddingBottom: 60,
-  width: "100%",
-}
+
+let gridStyle = {
+  minWidth: 450,
+  paddingTop: 50,
+  paddingBottom: 50
+};
 
 function App() {
   return (
     <div className="App" style={backGroundCSS}>
-      <div style={{ zIndex: 1, position: "fixed", width: "100%", overflow: 'auto' }}>
+      <div style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto'}}>
         <h1 style={titleCSS}>Joanna Yao</h1>
-        <Nav style={{ float: 'left', backgroundColor: 'Azure' }} />
+        <Nav style={{ float: 'left', backgroundColor: 'Azure'}}/>
       </div>
-
-      <div style={divCSS}>
-        <img alt="loading" style={photoCSS} src={Photo} />
-        <Basics/>
-      </div>
+      
+      <Row justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
+          <Col span={8} style={gridStyle}>
+            <img alt="loading" style={photoCSS} src={Photo} />
+          </Col>
+          <Col span={8} style={gridStyle}>
+            <Basics/>
+          </Col>
+          <Col span={8} style={gridStyle}>
+            <Links/>
+          </Col>
+      </Row>
 
       <h1 style={skillsCSS}>Skills</h1>
       <Skills />

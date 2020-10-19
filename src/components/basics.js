@@ -5,31 +5,29 @@ export default function Basics() {
   let listCSS = {
     backgroundColor: 'LightCyan',
     color: 'DarkCyan',
-    minWidth: 480,
+    width: "30%",
+    minWidth: 367,
     overflow: 'auto',
     textOverflow: 'ellipsis',
     fontSize: 18,
     fontWeight: "bold",
     textAlign: 'left',
-    width: "25%",
     height: 400,
-    float: "left",
     borderRadius: 24,
     borderStyle: "hidden outset outset hidden",
     borderColor: "Teal",
     borderWidth: 8,
     padding: 25,
     letterSpacing: 0.4,
-    margin: 100,
-    marginLeft: 200,
-    marginRight: 200
+    display: 'block',
+    margin: 'auto'
   }
 
   return (
     <>
       <List divided relaxed="very" style={listCSS}>
         <List.Item>
-          <List.Icon name='user' />
+          <List.Icon name='user'/>
           <List.Content>Joanna Yao</List.Content>
         </List.Item>
         <List.Item>
@@ -38,7 +36,7 @@ export default function Basics() {
         </List.Item>
         <List.Item>
           <List.Icon name='building'/>
-          <List.Content>Carnegie Mellon University Class of 2023</List.Content>
+          <List.Content>Carnegie Mellon University '23</List.Content>
         </List.Item>
         <List.Item>
           <List.Icon name='book'/>

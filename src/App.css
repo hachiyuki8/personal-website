@@ -68,3 +68,8 @@
   width: 100px;
   float: "left";
 }
+
+.html {
+  --antd-wave-shadow-color: 'red';
+  --scroll-bar: 0;
+}

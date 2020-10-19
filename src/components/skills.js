@@ -21,6 +21,7 @@ export default function Skills() {
     minWidth: 400,
     paddingTop: 30,
     paddingBottom: 30,
+    justify: 'center'
   };
 
   return (
