@@ -15,7 +15,7 @@ let titleCSS = {
   paddingLeft: 36,
   paddingRight: 16,
   letterSpacing: 1.5,
-  font: "bold 24px Cambria",
+  font: "bold 24px Trebuchet MS",
 }
 
 let backGroundCSS = {
@@ -33,7 +33,7 @@ let photoCSS = {
 }
 
 let skillsCSS = {
-  backgroundColor: 'Azure',
+  backgroundColor: 'AliceBlue',
   color: 'Teal',
   float: 'left',
   marginTop: 80,
@@ -44,7 +44,7 @@ let skillsCSS = {
   borderStyle: "outset",
   borderColor: "Powderblue",
   borderWidth: 8,
-  font: "bold 48px Cambria"
+  font: "bold 48px Trebuchet MS"
 }
 
 let divCSS = {
