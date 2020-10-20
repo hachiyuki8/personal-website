@@ -14,7 +14,6 @@ export default function Contact() {
     width: "100%",
     display: 'block',
     margin: 'auto',
-    color: 'MintCream'
   }
 
   let gridStyle = {
@@ -60,7 +59,7 @@ export default function Contact() {
         <Col span={5} style={gridStyle}>
           <List animated>
             <List.Item>
-              <Button style={buttonCSS} circular
+              <Button style={buttonCSS} circular active
                 size="massive" color='grey' icon='discord'
                 onClick={handleClickDiscord}
               />
@@ -93,7 +92,7 @@ export default function Contact() {
         <Col span={5} style={gridStyle}>
           <List animated>
             <List.Item>
-              <Button style={buttonCSS} circular
+              <Button style={buttonCSS} circular active
                 size="massive" color='green' icon='wechat'
                 onClick={handleClickWechat}
               />
@@ -104,14 +103,16 @@ export default function Contact() {
 
       <Row justify="center" align="middle">
         <Col span={12} style={gridStyle}>
-        <List animated>
-        <List.Item>
-          <Button style={buttonCSS2} size="huge" color="teal">
-            <Icon name='download'/>
-            Resume
-          </Button>
-        </List.Item>
-      </List>
+          <List animated>
+            <List.Item>
+              <Button style={buttonCSS2}
+                size="huge" color='instagram' icon='download'
+                onClick={()=>openInNew("https://drive.google.com/file/d/1BEhiz45BL9BM8nS5eoLMsX327sspZK7e/view?usp=sharing")}>
+                  <Icon name='download'/>
+                  Resume
+              </Button>
+            </List.Item>
+          </List>
         </Col>
       </Row>
     </div>

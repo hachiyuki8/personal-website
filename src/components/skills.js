@@ -41,7 +41,7 @@ export default function Skills() {
             <Card title="Programming" bordered={false} style={cardCSS}>
               <ul>
                 <li>Language: Python, C, R,
-                    JavaScript, HTML/CSS </li> <br/><br/>
+                    JavaScript, HTML/CSS, SML </li> <br/><br/>
                 <li>Framework: PyTorch, React </li>
               </ul>
             </Card>
