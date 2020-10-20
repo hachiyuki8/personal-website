@@ -43,6 +43,10 @@ export default function Basics() {
           <List.Content>Statistics and Machine Learning</List.Content>
         </List.Item>
         <List.Item>
+          <List.Icon name='book'/>
+          <List.Content>(additional) Computer Science</List.Content>
+        </List.Item>
+        <List.Item>
           <List.Icon name='mail' />
           <List.Content>
             <a href='mailto:xinyao@andrew.cmu.edu'>xinyao@andrew.cmu.edu</a>
@@ -51,10 +55,6 @@ export default function Basics() {
         <List.Item>
           <List.Icon name='phone' />
           <List.Content>(617) 388-5921</List.Content>
-        </List.Item>
-        <List.Item>
-          <List.Icon name='discord' />
-          <List.Content>HachiYuki#4141</List.Content>
         </List.Item>
       </List>
     </>

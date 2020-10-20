@@ -69,7 +69,7 @@
   float: "left";
 }
 
-.html {
-  --antd-wave-shadow-color: 'red';
-  --scroll-bar: 0;
+.ui.circular.button>.icon {
+  width: 2em; 
+  vertical-align: baseline;
 }

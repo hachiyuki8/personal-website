@@ -4,7 +4,7 @@ import Photo from './photo.jpeg';
 import Basics from "./components/basics";
 import Skills from './components/skills';
 import Links from './components/links';
-import { Card, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 import "antd/dist/antd.css";
 import "./index.css";
 import './App.css';
