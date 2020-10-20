@@ -14,6 +14,7 @@ export default function Contact() {
     width: "100%",
     display: 'block',
     margin: 'auto',
+    color: 'MintCream'
   }
 
   let gridStyle = {
@@ -28,6 +29,11 @@ export default function Contact() {
     window.alert("discord: hachiyuki#4141")
   }
 
+  const openInNew = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener, noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
+
   return (
     <div style={{ display: 'block', alignItems: 'center' }}>
       <Row justify="center" align="middle" style={{ paddingTop: 75 }}>
@@ -36,7 +42,7 @@ export default function Contact() {
             <List.Item>
             <Button style={buttonCSS} circular
               size="massive" color='github' icon='github'
-              href="https://github.com/hachiyuki8"
+              onClick={()=>openInNew("https://github.com/hachiyuki8")}
             />
             </List.Item>
           </List>
@@ -46,7 +52,7 @@ export default function Contact() {
             <List.Item>
               <Button style={buttonCSS} circular
                 size="massive" color='linkedin' icon='linkedin'
-                href="https://www.linkedin.com/in/joanna-yao-a06376198/"
+                onClick={()=>openInNew("https://www.linkedin.com/in/joanna-yao-a06376198/")}
               />
             </List.Item>
           </List>
@@ -69,7 +75,7 @@ export default function Contact() {
             <List.Item>
               <Button style={buttonCSS} circular
                 size="massive" color='youtube' icon='youtube'
-                href="https://www.youtube.com/channel/UCwL5PEn_zyDWRLha9aKVTiw"
+                onClick={()=>openInNew("https://www.youtube.com/channel/UCwL5PEn_zyDWRLha9aKVTiw")}
               />
             </List.Item>
           </List>
@@ -79,7 +85,7 @@ export default function Contact() {
             <List.Item>
               <Button style={buttonCSS} circular
                 size="massive" color='facebook' icon='facebook'
-                href="https://www.facebook.com/profile.php?id=100011168794502"
+                onClick={()=>openInNew("https://www.facebook.com/profile.php?id=100011168794502")}
               />
             </List.Item>
           </List>
@@ -101,8 +107,8 @@ export default function Contact() {
         <List animated>
         <List.Item>
           <Button style={buttonCSS2} size="huge" color="teal">
-            <Icon name='download' />
-            <a href="https://google.com" style={{ color: "MintCream" }}>Resume</a>
+            <Icon name='download'/>
+            Resume
           </Button>
         </List.Item>
       </List>
