@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Icon, List } from 'semantic-ui-react';
-import { Card, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 
-export default function Links() {
+export default function Contact() {
   let buttonCSS = {
     width: 65,
     display: 'block',

@@ -3,7 +3,7 @@ import Nav from './components/nav';
 import Photo from './photo.jpeg';
 import Basics from "./components/basics";
 import Skills from './components/skills';
-import Links from './components/links';
+import Contact from './components/contact';
 import { Col, Row } from 'antd';
 import "antd/dist/antd.css";
 import "./index.css";
@@ -73,7 +73,7 @@ function App() {
             <Basics/>
           </Col>
           <Col span={8} style={gridStyle}>
-            <Links/>
+            <Contact/>
           </Col>
       </Row>
 
