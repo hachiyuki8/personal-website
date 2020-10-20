@@ -17,7 +17,7 @@ let titleCSS = {
   paddingLeft: 36,
   paddingRight: 16,
   letterSpacing: 1.5,
-  font: "bold 24px Trebuchet MS",
+  fontSize: 24
 }
 
 let backGroundCSS = {
@@ -35,24 +35,20 @@ let photoCSS = {
   margin: 'auto'
 }
 
-let skillsCSS = {
-  backgroundColor: 'AliceBlue',
+let skillCSS = {
+  backgroundColor: 'Azure',
   color: 'Teal',
-  float: 'left',
-  marginTop: 80,
-  marginLeft: 150,
-  letterSpacing: 4,
-  padding: 20,
-  borderRadius: 20,
-  borderStyle: "outset",
-  borderColor: "Powderblue",
-  borderWidth: 8,
-  font: "bold 48px Trebuchet MS"
+  width: 250,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 3,
+  textAlign: 'center',
+  fontSize: 64
 }
 
 
 let gridStyle = {
-  minWidth: 450,
+  minWidth: 500,
   paddingTop: 50,
   paddingBottom: 50
 };
@@ -77,8 +73,12 @@ function App() {
           </Col>
       </Row>
 
-      <h1 style={skillsCSS}>Skills</h1>
-      <Skills />
+      <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:120}}>
+        <Col span={24}>
+          <h1 style={skillCSS}>Skills</h1>
+        </Col>
+      </Row>
+      <Skills/>
     </div>
   );
 }

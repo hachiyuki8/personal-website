@@ -17,8 +17,17 @@ export default function Contact() {
   }
 
   let gridStyle = {
-    paddingBottom: 85
+    paddingBottom: 40
   };
+
+  let skillsCSS = {
+    color: 'Azure',
+    textAlign: 'center',
+    marginTop: 40,
+    marginBottom: 20,
+    letterSpacing: 1.5,
+    fontSize: 26,
+  }
 
   let handleClickWechat = () => {
     window.alert("wechat: hachiyuki88")
@@ -35,7 +44,13 @@ export default function Contact() {
 
   return (
     <div style={{ display: 'block', alignItems: 'center' }}>
-      <Row justify="center" align="middle" style={{ paddingTop: 75 }}>
+      <Row justify="center" align="middle">
+        <Col span={12} style={gridStyle}>
+          <h1 style={skillsCSS}>Websites & Others</h1>
+        </Col>
+      </Row>
+      
+      <Row justify="center" align="middle">
         <Col span={5} style={gridStyle}>
           <List animated>
             <List.Item>

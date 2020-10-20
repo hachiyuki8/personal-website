@@ -6,14 +6,13 @@ export default function Skills() {
   let cardCSS = {
     backgroundColor: 'DarkCyan',
     color: 'Azure',
-    fontSize: 20,
     paddingTop: 5,
     paddingBottom: 5,
-    textAlign: 'left',
+    textAlign: 'center',
     fontWeight: 'bold',
-    borderRadius: 24,
+    borderRadius: 20,
     textOverflow: 'ellipsis',
-    letterSpacing: 0.4,
+    letterSpacing: 0.5,
   }
   
   let gridStyle = {

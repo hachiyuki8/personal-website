@@ -1,5 +1,5 @@
 .App {
-  font: normal 16px Trebuchet MS;
+  font: normal 16px Lato;
   letter-spacing: 0.4px;
 }
 
@@ -46,7 +46,7 @@
   width: 100%;
   padding-left: 150px;
   padding-right: 150px;
-  padding-top: 250px;
+  padding-top: 80px;
   padding-bottom: 120px;
   background: Azure;
 }
