@@ -5,6 +5,7 @@ import Basics from "./components/basics";
 import Skills from './components/skills';
 import Contact from './components/contact';
 import { Col, Row } from 'antd';
+import { Icon } from 'semantic-ui-react';
 import "antd/dist/antd.css";
 import "./index.css";
 import './App.css';
@@ -46,19 +47,53 @@ let skillCSS = {
   fontSize: 64
 }
 
-
 let gridStyle = {
   minWidth: 500,
   paddingTop: 50,
   paddingBottom: 50
-};
+}
+
+let bottomLCSS = {
+  backgroundColor: 'LightCyan',
+  color: 'Teal',
+  width: '100%',
+  padding: 25,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 1,
+  textAlign: 'right',
+  fontSize: 16,
+}
+
+let bottomRCSS = {
+  backgroundColor: 'LightCyan',
+  color: 'Teal',
+  width: '100%',
+  padding: 25,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 1,
+  textAlign: 'left',
+  fontSize: 16,
+}
+
+let eduCSS = {
+  backgroundColor: 'DarkCyan',
+  color: 'Azure',
+  width: 300,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 3,
+  textAlign: 'center',
+  fontSize: 64
+}
 
 function App() {
   return (
     <div className="App" style={backGroundCSS}>
       <div style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto'}}>
         <h1 style={titleCSS}>Joanna Yao</h1>
-        <Nav style={{ float: 'left', backgroundColor: 'Azure'}}/>
+        <Nav style={{ float: 'left'}}/>
       </div>
       
       <Row justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
@@ -79,6 +114,27 @@ function App() {
         </Col>
       </Row>
       <Skills/>
+
+      <Row justify="center" align="middle" 
+       style={{backgroundColor: "DarkCyan", paddingTop:120, paddingBottom:120}}>
+        <Col span={24}>
+          <h1 style={eduCSS}>Education</h1>
+        </Col>
+      </Row>
+
+      <Row justify="center" align="middle" style={{backgroundColor: "LightCyan"}}>
+        <Col span={12}>
+          <h1 style={bottomLCSS}>Developed by: Joanna Yao</h1>     
+        </Col>
+        <Col span={12}>
+          <a style={bottomRCSS} 
+            href="https://github.com/hachiyuki8/personal-website"
+            target="_blank" rel="noopener noreferrer">
+              <Icon name='github'/>GitHub repository
+          </a>
+        </Col>
+      </Row>
+
     </div>
   );
 }

@@ -44,7 +44,7 @@ export default function Basics() {
         </List.Item>
         <List.Item>
           <List.Icon name='book'/>
-          <List.Content>(additional) Computer Science</List.Content>
+          <List.Content>(Minor) Computer Science</List.Content>
         </List.Item>
         <List.Item>
           <List.Icon name='mail' />

@@ -20,7 +20,7 @@ export default function Contact() {
     paddingBottom: 40
   };
 
-  let skillsCSS = {
+  let webCSS = {
     color: 'Azure',
     textAlign: 'center',
     marginTop: 40,
@@ -46,7 +46,7 @@ export default function Contact() {
     <div style={{ display: 'block', alignItems: 'center' }}>
       <Row justify="center" align="middle">
         <Col span={12} style={gridStyle}>
-          <h1 style={skillsCSS}>Websites & Others</h1>
+          <h1 style={webCSS}>Websites & Others</h1>
         </Col>
       </Row>
       
