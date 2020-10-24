@@ -55,7 +55,7 @@ export default function Contact() {
           <List animated>
             <List.Item>
             <Button style={buttonCSS} circular
-              size="massive" color='github' icon='github'
+              size="massive" icon='github'
               onClick={()=>openInNew("https://github.com/hachiyuki8")}
             />
             </List.Item>
@@ -121,7 +121,7 @@ export default function Contact() {
           <List animated>
             <List.Item>
               <Button style={buttonCSS2}
-                size="huge" color='instagram' icon='download'
+                size="huge" color='instagram' 
                 onClick={()=>openInNew("https://drive.google.com/file/d/1BEhiz45BL9BM8nS5eoLMsX327sspZK7e/view?usp=sharing")}>
                   <Icon name='download'/>
                   Resume

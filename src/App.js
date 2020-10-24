@@ -134,7 +134,6 @@ function App() {
           </a>
         </Col>
       </Row>
-
     </div>
   );
 }

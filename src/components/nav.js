@@ -7,13 +7,12 @@ export default function Nav(props) {
   // Define state vars
   const [selected, setSelected] = useState('mail');
 
-  useEffect(() => {
-    // things to do whenever the component reloads
-    // such as calling a backend api and fetching data
-  });
+  // useEffect(() => {
+  //   // things to do whenever the component reloads
+  //   // such as calling a backend api and fetching data
+  // });
 
   let handleClick = e => {
-    console.log('click ', e);
     setSelected(e.key);
   };
 
@@ -28,7 +27,6 @@ export default function Nav(props) {
   }
 
   return (
-    // your jsx. there must be a single parent tag
     <>
       <Menu
         onClick={e => handleClick(e)}
