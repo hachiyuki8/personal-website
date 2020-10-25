@@ -54,7 +54,7 @@ export default function Contact() {
         <Col span={5} style={gridStyle}>
           <List animated>
             <List.Item>
-            <Button style={buttonCSS} circular
+            <Button style={buttonCSS} circular active
               size="massive" icon='github'
               onClick={()=>openInNew("https://github.com/hachiyuki8")}
             />
@@ -64,9 +64,9 @@ export default function Contact() {
         <Col span={5} style={gridStyle}>
           <List animated>
             <List.Item>
-              <Button style={buttonCSS} circular
-                size="massive" color='linkedin' icon='linkedin'
-                onClick={()=>openInNew("https://www.linkedin.com/in/joanna-yao-a06376198/")}
+              <Button style={buttonCSS} circular active
+                size="massive" color='green' icon='wechat'
+                onClick={handleClickWechat}
               />
             </List.Item>
           </List>
@@ -87,7 +87,7 @@ export default function Contact() {
         <Col span={5} style={gridStyle}>
           <List animated>
             <List.Item>
-              <Button style={buttonCSS} circular
+              <Button style={buttonCSS} circular active
                 size="massive" color='youtube' icon='youtube'
                 onClick={()=>openInNew("https://www.youtube.com/channel/UCwL5PEn_zyDWRLha9aKVTiw")}
               />
@@ -97,7 +97,7 @@ export default function Contact() {
         <Col span={5} style={gridStyle}>
           <List animated>
             <List.Item>
-              <Button style={buttonCSS} circular
+              <Button style={buttonCSS} circular active
                 size="massive" color='facebook' icon='facebook'
                 onClick={()=>openInNew("https://www.facebook.com/profile.php?id=100011168794502")}
               />
@@ -108,8 +108,8 @@ export default function Contact() {
           <List animated>
             <List.Item>
               <Button style={buttonCSS} circular active
-                size="massive" color='green' icon='wechat'
-                onClick={handleClickWechat}
+                size="massive" color='linkedin' icon='linkedin'
+                onClick={()=>openInNew("https://www.linkedin.com/in/joanna-yao-a06376198/")}
               />
             </List.Item>
           </List>
