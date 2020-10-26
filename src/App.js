@@ -4,6 +4,7 @@ import Photo from './photo.jpeg';
 import Basics from "./components/basics";
 import Skills from './components/skills';
 import Contact from './components/contact';
+import Edu from './components/edu';
 import { Col, Row } from 'antd';
 import { Icon } from 'semantic-ui-react';
 import "antd/dist/antd.css";
@@ -88,7 +89,18 @@ let eduCSS = {
   fontSize: 64
 }
 
-function App() {
+let schoolCSS = {
+  backgroundColor: 'DarkCyan',
+  color: 'Azure',
+  width: 500,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 3,
+  textAlign: 'center',
+  fontSize: 64
+}
+
+export default function App() {
   return (
     <div className="App" style={backGroundCSS}>
       <div style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto'}}>
@@ -116,11 +128,19 @@ function App() {
       <Skills/>
 
       <Row justify="center" align="middle" 
-       style={{backgroundColor: "DarkCyan", paddingTop:120, paddingBottom:120}}>
+       style={{backgroundColor: "DarkCyan", paddingTop:120}}>
         <Col span={24}>
           <h1 style={eduCSS}>Education</h1>
         </Col>
       </Row>
+      <Row justify="center" align="middle" 
+       style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:120}}>
+        <Col span={24}>
+          <Edu/>
+        </Col>
+
+      </Row>
+      
 
       <Row justify="center" align="middle" style={{backgroundColor: "LightCyan"}}>
         <Col span={12}>
@@ -138,4 +158,3 @@ function App() {
   );
 }
 
-export default App;
