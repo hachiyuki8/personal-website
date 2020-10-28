@@ -7,7 +7,8 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 
-export default function cmu() {
+
+export default function CMU() {
   let textCSS = {
     fontSize: 22,
     color: "azure",
@@ -26,12 +27,12 @@ export default function cmu() {
       <Timeline align="left">
         <TimelineItem>
           <TimelineOppositeContent style={textCSS}>
-            Aug 2019 - Present<br/>
+            Aug 2019 - Present<br />
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:24, height:24, backgroundColor: "LightCyan"}}/>
-            <TimelineConnector style={{height:30}}/>
+              style={{ width: 24, height: 24, backgroundColor: "LightCyan" }} />
+            <TimelineConnector style={{ height: 30 }} />
           </TimelineSeparator>
           <TimelineContent style={textCSS}>
             Carnegie Mellon University
@@ -44,11 +45,11 @@ export default function cmu() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
-            <TimelineConnector style={{height:60}}/>
+              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+            <TimelineConnector style={{ height: 60 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
-            Major: Statistics and Machine Learning<br/><br/>
+            Major: Statistics and Machine Learning<br /><br />
             Minor: Computer Science
           </TimelineContent>
         </TimelineItem>
@@ -56,27 +57,27 @@ export default function cmu() {
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
-            <TimelineConnector style={{height:60}}/>
+              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+            <TimelineConnector style={{ height: 60 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
-            GPA: 4.0/4.0<br/><br/>
+            GPA: 4.0/4.0<br /><br />
             <a href="https://www.cmu.edu/dietrich/qsss/people/students/2023/index.html"
-             target="_blank" rel="noopener noreferrer"
-             style={{color:"Azure",textDecoration: "underline"}}>
+              target="_blank" rel="noopener noreferrer"
+              style={{ color: "Azure", textDecoration: "underline" }}>
               Quantitative Social Science Scholars
             </a>
           </TimelineContent>
         </TimelineItem>
-        
+
         <TimelineItem>
           <TimelineOppositeContent style={text2CSS}>
             Fall 2019
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
-            <TimelineConnector style={{height:60, backgroundColor:"darkcyan"}}/>
+              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+            <TimelineConnector style={{ height: 60, backgroundColor: "darkcyan" }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Dietrich College Dean's List, with Honors
@@ -86,8 +87,8 @@ export default function cmu() {
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:24, height:24, backgroundColor: "LightCyan"}}/>
-            <TimelineConnector style={{height:30}}/>
+              style={{ width: 24, height: 24, backgroundColor: "LightCyan" }} />
+            <TimelineConnector style={{ height: 30 }} />
           </TimelineSeparator>
           <TimelineContent style={textCSS}>
             Activities
@@ -100,11 +101,11 @@ export default function cmu() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
-            <TimelineConnector style={{height:60}}/>
+              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+            <TimelineConnector style={{ height: 60 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
-            CMU Esports - Competitive Overwatch<br/><br/>
+            CMU Esports - Competitive Overwatch<br /><br />
             A Team Member
           </TimelineContent>
         </TimelineItem>
@@ -115,16 +116,16 @@ export default function cmu() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
-            <TimelineConnector style={{height:60}}/>
+              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+            <TimelineConnector style={{ height: 60 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             <a href="https://scottylabs.org/index.html"
-             target="_blank" rel="noopener noreferrer"
-             style={{color:"Azure",textDecoration: "underline"}}>
+              target="_blank" rel="noopener noreferrer"
+              style={{ color: "Azure", textDecoration: "underline" }}>
               Scotty Labs
             </a>
-             <br/><br/>
+            <br /><br />
             Tech Project Member
           </TimelineContent>
         </TimelineItem>
@@ -135,11 +136,11 @@ export default function cmu() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
-            <TimelineConnector style={{height:60}}/>
+              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+            <TimelineConnector style={{ height: 60 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
-            Data Science Club<br/><br/>
+            Data Science Club<br /><br />
             Project Member
           </TimelineContent>
         </TimelineItem>
@@ -150,10 +151,10 @@ export default function cmu() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
+              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
-            Game Creation Society<br/><br/>
+            Game Creation Society<br /><br />
             Project Member
           </TimelineContent>
         </TimelineItem>

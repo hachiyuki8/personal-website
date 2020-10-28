@@ -1,20 +1,24 @@
 # pull official base image
-FROM node:13.12.0-alpine
+FROM node:alpine
 
 # set working directory
 WORKDIR /app
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
-
 # install app dependencies
 COPY package.json ./
-COPY package-lock.json ./
-RUN npm install --silent
-RUN npm install react-scripts@3.4.1 -g --silent
+COPY yarn.lock ./
+# RUN apk --no-cache add --virtual native-deps \
+#   g++ gcc libgcc libstdc++ linux-headers make python2 && \
+#   yarn && \
+#   apk del native-deps
 
 # add app
 COPY . ./
 
+# build app
+RUN yarn build
+
+RUN yarn global add serve
+
 # start app
-CMD ["npm", "start"]
+CMD ["serve", "-s", "build", "-l", "5000"]

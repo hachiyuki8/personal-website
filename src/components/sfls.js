@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
@@ -6,8 +6,9 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import { Accordion, Icon } from 'semantic-ui-react'
 
-export default function sfls() {
+export default function SFLS() {
   let textCSS = {
     fontSize: 22,
     color: "azure",
@@ -19,6 +20,18 @@ export default function sfls() {
     fontSize: 16,
     color: "azure",
     letterSpacing: 1
+  }
+
+  const [activeIndex, setActiveIndex] = useState([]);
+
+  let handleClick = (e, titleProps) => {
+    const { index } = titleProps;
+    const newIndex = activeIndex === index ? -1 : index;
+
+    activeIndex.includes(newIndex) ? 
+      setActiveIndex(activeIndex.filter(e => e !== newIndex)) :
+      setActiveIndex([...activeIndex, newIndex]) 
+
   }
 
   return (
@@ -65,7 +78,7 @@ export default function sfls() {
 
         <TimelineItem>
           <TimelineOppositeContent style={text2CSS}>
-            Mar 2016 - Jun 2018
+            Jan 2016 - Jun 2018
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
@@ -74,13 +87,28 @@ export default function sfls() {
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Student Union<br/><br/>
-            President of Department of Technical Support
+            <Accordion exclusive={false}>
+              <Accordion.Title
+                active={activeIndex.includes(0)}
+                index={0}
+                onClick={handleClick}
+                style={text2CSS}
+              >
+                <Icon name='dropdown' />
+                President of Department of Technical Support
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex.includes(0)}>
+                <p>
+                  Provided technical support and media design for school activities, and produced weekly broadcast.
+                </p>
+              </Accordion.Content>
+            </Accordion>
           </TimelineContent>
         </TimelineItem>
 
         <TimelineItem>
           <TimelineOppositeContent style={text2CSS}>
-            Mar 2016 - Jun 2018
+            Jan 2016 - Jun 2018
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
@@ -89,7 +117,22 @@ export default function sfls() {
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Debate Team<br/><br/>
-            Member
+            <Accordion exclusive={false}>
+              <Accordion.Title
+                active={activeIndex.includes(1)}
+                index={1}
+                onClick={handleClick}
+                style={text2CSS}
+              >
+                <Icon name='dropdown' />
+                Starting Member
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex.includes(1)}>
+                <p>
+                  Represented Year 2019 Class 2, won 3 school-wide champions and 1 second-place over 5 semesters.
+                </p>
+              </Accordion.Content>
+            </Accordion>
           </TimelineContent>
         </TimelineItem>
 
