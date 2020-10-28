@@ -11,6 +11,7 @@ COPY yarn.lock ./
 #   g++ gcc libgcc libstdc++ linux-headers make python2 && \
 #   yarn && \
 #   apk del native-deps
+RUN yarn
 
 # add app
 COPY . ./
