@@ -55,7 +55,7 @@ export default function Contact() {
           <List animated>
             <List.Item>
             <Button style={buttonCSS} circular active
-              size="massive" icon='github'
+              size="massive" icon="github"
               onClick={()=>openInNew("https://github.com/hachiyuki8")}
             />
             </List.Item>

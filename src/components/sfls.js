@@ -147,7 +147,22 @@ export default function SFLS() {
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Student Union<br/><br/>
-            Member of Secretariat
+            <Accordion exclusive={false}>
+              <Accordion.Title
+                active={activeIndex.includes(2)}
+                index={2}
+                onClick={handleClick}
+                style={text2CSS}
+              >
+                <Icon name='dropdown' />
+                Member of Secretariat
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex.includes(2)}>
+                <p>
+                  Coordinated the operation of Student Union across departments, and successfully organized a series of school-wide events.
+                </p>
+              </Accordion.Content>
+            </Accordion>
           </TimelineContent>
         </TimelineItem>
 
@@ -162,13 +177,28 @@ export default function SFLS() {
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             AI & Tech Club<br/><br/>
-            Co-founder
+            <Accordion exclusive={false}>
+              <Accordion.Title
+                active={activeIndex.includes(3)}
+                index={3}
+                onClick={handleClick}
+                style={text2CSS}
+              >
+                <Icon name='dropdown' />
+                Co-founder
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex.includes(3)}>
+                <p>
+                  Recruited club members and organized regular club events related to competitive programming, algorithms, AI and other technologies.
+                </p>
+              </Accordion.Content>
+            </Accordion>
           </TimelineContent>
         </TimelineItem>
 
         <TimelineItem>
           <TimelineOppositeContent style={text2CSS}>
-            Jan 2018 - Jan 2019
+            Jan 2018 - Jun 2018
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
@@ -176,7 +206,22 @@ export default function SFLS() {
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Student Career Development Center<br/><br/>
-            Editor
+            <Accordion exclusive={false}>
+              <Accordion.Title
+                active={activeIndex.includes(4)}
+                index={4}
+                onClick={handleClick}
+                style={text2CSS}
+              >
+                <Icon name='dropdown' />
+                Editor
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex.includes(4)}>
+                <p>
+                  Edited a handbook for college application and career development.
+                </p>
+              </Accordion.Content>
+            </Accordion>
           </TimelineContent>
         </TimelineItem>
 
