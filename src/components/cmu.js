@@ -6,7 +6,8 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
-import { Accordion, Icon } from 'semantic-ui-react'
+import { Accordion, Icon, List } from 'semantic-ui-react'
+import Course from './course';
 
 
 export default function CMU() {
@@ -14,7 +15,7 @@ export default function CMU() {
     fontSize: 22,
     color: "azure",
     fontWeight: "bold",
-    letterSpacing: 0.5
+    letterSpacing: 0.5,
   }
 
   let text2CSS = {
@@ -23,15 +24,25 @@ export default function CMU() {
     letterSpacing: 1
   }
 
+  let courseCSS = {
+    fontSize: 22,
+    color: "azure",
+    fontWeight: "bold",
+    letterSpacing: 0.5,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+
   const [activeIndex, setActiveIndex] = useState([]);
 
   let handleClick = (e, titleProps) => {
     const { index } = titleProps;
     const newIndex = activeIndex === index ? -1 : index;
 
-    activeIndex.includes(newIndex) ? 
+    activeIndex.includes(newIndex) ?
       setActiveIndex(activeIndex.filter(e => e !== newIndex)) :
-      setActiveIndex([...activeIndex, newIndex]) 
+      setActiveIndex([...activeIndex, newIndex])
 
   }
 
@@ -165,6 +176,7 @@ export default function CMU() {
           <TimelineSeparator>
             <TimelineDot
               style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+            <TimelineConnector style={{ height: 75, backgroundColor: "darkcyan" }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Game Creation Society<br /><br />
@@ -173,6 +185,23 @@ export default function CMU() {
         </TimelineItem>
 
       </Timeline>
+
+      <Accordion exclusive={false}>
+        <Accordion.Title
+          active={activeIndex.includes(0)}
+          index={0}
+          onClick={handleClick}
+          style={courseCSS}
+        >
+          <Icon name='dropdown' />
+                Relevant Coursework
+              </Accordion.Title>
+        <Accordion.Content active={activeIndex.includes(0)}>
+          <Course/>
+        </Accordion.Content>
+      </Accordion>
+
+
     </React.Fragment>
   )
 }

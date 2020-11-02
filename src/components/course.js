@@ -3,16 +3,20 @@ import { List } from 'semantic-ui-react'
 
 export default function Course() {
 
-  let textCSS = {
+  let courseCSS = {
     fontSize: 16,
     color: "azure",
     letterSpacing: 1,
-    textOverflow: 'ellipsis'
+    textOverflow: 'ellipsis',
+    display: 'block',
+    width: "50%",
+    margin: 'auto',
+    minWidth: 300,
   }
 
   return (
     <React.Fragment>
-      <List style={textCSS} bulleted relaxed divided>
+      <List style={courseCSS} bulleted relaxed divided>
         <List.Item>Imperative Computation</List.Item>
         <List.Item>Functional Programming</List.Item>
         <List.Item>Parallel and Sequential Data Structures and Algorithms</List.Item>
