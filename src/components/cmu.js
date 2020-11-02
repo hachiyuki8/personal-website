@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
@@ -6,6 +6,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import { Accordion, Icon } from 'semantic-ui-react'
 
 
 export default function CMU() {
@@ -20,6 +21,18 @@ export default function CMU() {
     fontSize: 16,
     color: "azure",
     letterSpacing: 1
+  }
+
+  const [activeIndex, setActiveIndex] = useState([]);
+
+  let handleClick = (e, titleProps) => {
+    const { index } = titleProps;
+    const newIndex = activeIndex === index ? -1 : index;
+
+    activeIndex.includes(newIndex) ? 
+      setActiveIndex(activeIndex.filter(e => e !== newIndex)) :
+      setActiveIndex([...activeIndex, newIndex]) 
+
   }
 
   return (

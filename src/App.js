@@ -89,17 +89,6 @@ let eduCSS = {
   fontSize: 64
 }
 
-let schoolCSS = {
-  backgroundColor: 'DarkCyan',
-  color: 'Azure',
-  width: 500,
-  display: 'block',
-  margin: 'auto',
-  letterSpacing: 3,
-  textAlign: 'center',
-  fontSize: 64
-}
-
 export default function App() {
   return (
     <div className="App" style={backGroundCSS}>
