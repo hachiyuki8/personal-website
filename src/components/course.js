@@ -1,7 +1,7 @@
 import React from 'react';
 import { List } from 'semantic-ui-react'
 
-export default function course() {
+export default function Course() {
 
   let textCSS = {
     fontSize: 16,

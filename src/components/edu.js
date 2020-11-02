@@ -4,7 +4,7 @@ import CMU from './cmu';
 import Course from './course';
 import SFLS from './sfls';
 
-export default function edu() {
+export default function Edu() {
   const panes = [
     {
       menuItem: {content:'University - Overview', icon: 'graduation'},
