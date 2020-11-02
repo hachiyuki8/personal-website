@@ -92,10 +92,12 @@ let eduCSS = {
 export default function App() {
   return (
     <div className="App" style={backGroundCSS}>
-      <div style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto'}}>
-        <h1 style={titleCSS}>Joanna Yao</h1>
-        <Nav style={{ float: 'left'}}/>
-      </div>
+      <Row>
+        <div style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto'}}>
+          <h1 style={titleCSS}>Joanna Yao</h1>
+          <Nav style={{ float: 'left'}}/>
+        </div>
+      </Row>
       
       <Row justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
           <Col span={8} style={gridStyle}>
@@ -124,7 +126,7 @@ export default function App() {
       </Row>
       <Row justify="center" align="middle" 
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:120}}>
-        <Col span={24}>
+        <Col xl={{span:12}} lg={{span:15}} md={{span:18}} sm={{span:21}} xs={{span:24}}>
           <Edu/>
         </Col>
 

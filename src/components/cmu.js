@@ -29,9 +29,9 @@ export default function CMU() {
     color: "azure",
     fontWeight: "bold",
     letterSpacing: 0.5,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   }
 
   const [activeIndex, setActiveIndex] = useState([]);
@@ -43,7 +43,6 @@ export default function CMU() {
     activeIndex.includes(newIndex) ?
       setActiveIndex(activeIndex.filter(e => e !== newIndex)) :
       setActiveIndex([...activeIndex, newIndex])
-
   }
 
   return (
@@ -70,21 +69,11 @@ export default function CMU() {
           <TimelineSeparator>
             <TimelineDot
               style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
-            <TimelineConnector style={{ height: 60 }} />
+            <TimelineConnector style={{ height: 120 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Major: Statistics and Machine Learning<br /><br />
-            Minor: Computer Science
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot
-              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
-            <TimelineConnector style={{ height: 60 }} />
-          </TimelineSeparator>
-          <TimelineContent style={text2CSS}>
+            Minor: Computer Science<br /><br />
             GPA: 4.0/4.0<br /><br />
             <a href="https://www.cmu.edu/dietrich/qsss/people/students/2023/index.html"
               target="_blank" rel="noopener noreferrer"
@@ -186,7 +175,7 @@ export default function CMU() {
 
       </Timeline>
 
-      <Accordion exclusive={false}>
+      <Accordion exclusive={false} style={{paddingBottom: 60}}>
         <Accordion.Title
           active={activeIndex.includes(0)}
           index={0}
@@ -195,12 +184,11 @@ export default function CMU() {
         >
           <Icon name='dropdown' />
                 Relevant Coursework
-              </Accordion.Title>
+        </Accordion.Title>
         <Accordion.Content active={activeIndex.includes(0)}>
           <Course/>
         </Accordion.Content>
       </Accordion>
-
 
     </React.Fragment>
   )

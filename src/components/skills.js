@@ -8,7 +8,7 @@ export default function Skills() {
     color: 'Azure',
     paddingTop: 5,
     paddingBottom: 5,
-    textAlign: 'center',
+    textAlign: 'left',
     fontWeight: 'bold',
     borderRadius: 20,
     textOverflow: 'ellipsis',
