@@ -15,20 +15,17 @@ export default function CMU() {
     fontSize: 22,
     color: "azure",
     fontWeight: "bold",
-    letterSpacing: 0.5,
   }
 
   let text2CSS = {
     fontSize: 16,
     color: "azure",
-    letterSpacing: 1
   }
 
   let courseCSS = {
     fontSize: 22,
     color: "azure",
     fontWeight: "bold",
-    letterSpacing: 0.5,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

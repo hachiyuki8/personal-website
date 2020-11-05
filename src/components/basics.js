@@ -17,8 +17,7 @@ export default function Basics() {
     borderStyle: "hidden outset outset hidden",
     borderColor: "Teal",
     borderWidth: 8,
-    padding: 25,
-    letterSpacing: 1,
+    padding: 20,
     display: 'block',
     margin: 'auto'
   }

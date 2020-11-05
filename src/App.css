@@ -1,7 +1,7 @@
 .App {
   font-family: 'Jost';
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .App-logo {
@@ -57,7 +57,7 @@
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
 }
 
 .ant-card-body {

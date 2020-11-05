@@ -6,7 +6,6 @@ export default function Course() {
   let courseCSS = {
     fontSize: 16,
     color: "azure",
-    letterSpacing: 1,
     textOverflow: 'ellipsis',
     display: 'block',
     width: "50%",

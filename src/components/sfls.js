@@ -13,13 +13,11 @@ export default function SFLS() {
     fontSize: 22,
     color: "azure",
     fontWeight: "bold",
-    letterSpacing: 0.5
   }
 
   let text2CSS = {
     fontSize: 16,
     color: "azure",
-    letterSpacing: 1
   }
 
   const [activeIndex, setActiveIndex] = useState([]);

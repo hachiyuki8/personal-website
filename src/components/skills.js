@@ -11,7 +11,6 @@ export default function Skills() {
     textAlign: 'left',
     borderRadius: 20,
     textOverflow: 'ellipsis',
-    letterSpacing: 1,
   }
   
   let gridStyle = {
