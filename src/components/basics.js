@@ -13,7 +13,7 @@ export default function Basics() {
     fontWeight: "bold",
     textAlign: 'left',
     height: 400,
-    borderRadius: 24,
+    borderRadius: 20,
     borderStyle: "hidden outset outset hidden",
     borderColor: "Teal",
     borderWidth: 8,

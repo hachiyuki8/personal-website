@@ -32,7 +32,7 @@ let backGroundCSS = {
 let photoCSS = {
   height: "400px",
   minWidth: "300px",
-  borderRadius: 24,
+  borderRadius: 20,
   width: '45%',
   display: 'block',
   margin: 'auto'
@@ -137,7 +137,7 @@ export default function App() {
         </Col>
       </Row>
       <Row justify="center" align="middle" 
-       style={{backgroundColor: "DarkCyan", paddingBottom:100}}>
+       style={{backgroundColor: "DarkCyan", paddingBottom:120}}>
         <Col xl={{span:12}} lg={{span:15}} md={{span:18}} sm={{span:21}} xs={{span:24}}>
           <Edu/>
         </Col>
