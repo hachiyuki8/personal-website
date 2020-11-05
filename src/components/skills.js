@@ -38,8 +38,8 @@ export default function Skills() {
             <Card title="Programming" bordered={false} style={cardCSS}>
               <ul>
                 <li>Language: Python, C, R,
-                    JavaScript, HTML/CSS, SML </li> <br/><br/>
-                <li>Framework: PyTorch, React </li>
+                    JavaScript, HTML/CSS, SQL, Standard ML </li> <br/><br/>
+                <li>Framework: React, PyTorch </li>
               </ul>
             </Card>
           </Col>
@@ -58,8 +58,8 @@ export default function Skills() {
             <Card title="General" bordered={false} style={cardCSS}>
             <ul>
                 <li>Data Analysis </li> <br/><br/>
-                <li>Video Editing </li> <br/><br/>
-                <li>Tutoring </li>
+                <li>Web Development</li> <br/><br/>
+                <li>Video Editing </li>
               </ul>
             </Card>
           </Col>

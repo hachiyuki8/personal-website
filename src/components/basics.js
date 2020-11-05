@@ -48,7 +48,8 @@ export default function Basics() {
         <List.Item>
           <List.Icon name='mail' />
           <List.Content>
-            <a href='mailto:xinyao@andrew.cmu.edu'>xinyao@andrew.cmu.edu</a>
+            <a href='mailto:xinyao@andrew.cmu.edu' 
+             target="_blank" rel="noopener noreferrer">xinyao@andrew.cmu.edu</a>
           </List.Content>
         </List.Item>
         <List.Item>
