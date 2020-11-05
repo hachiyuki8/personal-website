@@ -9,7 +9,7 @@ export default function Skills() {
     paddingTop: 5,
     paddingBottom: 5,
     textAlign: 'left',
-    borderRadius: 20,
+    borderRadius: 10,
     textOverflow: 'ellipsis',
   }
   

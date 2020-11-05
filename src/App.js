@@ -5,6 +5,7 @@ import Basics from "./components/basics";
 import Skills from './components/skills';
 import Contact from './components/contact';
 import Edu from './components/edu';
+import Exp from './components/exp';
 import { Col, Row } from 'antd';
 import { Icon } from 'semantic-ui-react';
 import "antd/dist/antd.css";
@@ -147,6 +148,7 @@ export default function App() {
           <h1 style={expCSS}>Experience</h1>
         </Col>
       </Row>
+      <Exp/>
       
       <Row justify="center" align="middle" style={{backgroundColor: "LightCyan"}}>
         <Col span={12}>
