@@ -9,10 +9,9 @@ export default function Skills() {
     paddingTop: 5,
     paddingBottom: 5,
     textAlign: 'left',
-    fontWeight: 'bold',
     borderRadius: 20,
     textOverflow: 'ellipsis',
-    letterSpacing: 0.5,
+    letterSpacing: 1,
   }
   
   let gridStyle = {

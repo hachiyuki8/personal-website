@@ -18,7 +18,7 @@ export default function Basics() {
     borderColor: "Teal",
     borderWidth: 8,
     padding: 25,
-    letterSpacing: 0.4,
+    letterSpacing: 1,
     display: 'block',
     margin: 'auto'
   }

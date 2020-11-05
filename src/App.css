@@ -1,6 +1,7 @@
 .App {
-  font: normal 16px Lato;
-  letter-spacing: 0.4px;
+  font-family: 'Jost';
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .App-logo {
