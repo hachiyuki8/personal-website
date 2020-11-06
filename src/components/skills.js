@@ -11,6 +11,7 @@ export default function Skills() {
     textAlign: 'left',
     borderRadius: 10,
     textOverflow: 'ellipsis',
+    paddingRight: 5
   }
   
   let gridStyle = {
@@ -39,7 +40,7 @@ export default function Skills() {
               <ul>
                 <li>Language: Python, C, R,
                     JavaScript, HTML/CSS, SQL, Standard ML </li> <br/><br/>
-                <li>Framework: React, PyTorch </li>
+                <li>Framework: PyTorch, React </li>
               </ul>
             </Card>
           </Col>

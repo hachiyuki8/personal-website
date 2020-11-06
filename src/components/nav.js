@@ -20,9 +20,7 @@ export default function Nav(props) {
     backgroundColor: 'LightCyan',
     color: 'Teal',
     fontSize: 18,
-    fontWeight: 'bold',
     padding: 12,
-    letterSpacing: 1,
     minWidth: 800,
   }
 

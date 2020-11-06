@@ -8,7 +8,7 @@ export default function Course() {
     color: "azure",
     textOverflow: 'ellipsis',
     display: 'block',
-    width: "50%",
+    width: "52%",
     margin: 'auto',
     minWidth: 300,
   }
