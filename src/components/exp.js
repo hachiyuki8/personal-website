@@ -38,7 +38,7 @@ export default function Exp() {
           </Header>
           <List as='ul' style={{fontSize:18}}>
               <List.Item style={{paddingBottom:15}}>
-                Collected and analyszed attendance data for all programs under SASC, and presented feedback to the executives and staff.
+                Collected and analyzed attendance data for all programs under SASC, and presented feedback to the executives and staff.
               </List.Item>
           </List>
         </Col>
@@ -76,7 +76,7 @@ export default function Exp() {
                 Coordinated a team that wrote a Python textbook targeting primary school students.
               </List.Item>
               <List.Item style={{paddingBottom:15}}>
-                Assisted with teaching and collected feedback from students and parents to improve course design.
+                Assisted with teaching and collected feedback from students to improve course design.
               </List.Item>
               <List.Item style={{paddingBottom:15}}>
                 Wrote and published technical articles via Wechat Official Account.
