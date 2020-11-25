@@ -146,25 +146,10 @@ export default function CMU() {
           <TimelineSeparator>
             <TimelineDot
               style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
-            <TimelineConnector style={{ height: 60 }} />
-          </TimelineSeparator>
-          <TimelineContent style={text2CSS}>
-            Data Science Club<br /><br />
-            Project Member
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent style={text2CSS}>
-            Aug 2020 - Present
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot
-              style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
             <TimelineConnector style={{ height: 75, backgroundColor: "darkcyan" }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
-            Game Creation Society<br /><br />
+            Data Science Club<br /><br />
             Project Member
           </TimelineContent>
         </TimelineItem>

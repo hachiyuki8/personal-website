@@ -40,7 +40,7 @@ export default function Skills() {
               <ul>
                 <li>Language: Python, C, R,
                     JavaScript, HTML/CSS, SQL, Standard ML </li> <br/><br/>
-                <li>Framework: PyTorch, React </li>
+                <li>Framework: React, PyTorch </li>
               </ul>
             </Card>
           </Col>
