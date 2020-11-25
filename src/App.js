@@ -6,6 +6,7 @@ import Skills from './components/skills';
 import Contact from './components/contact';
 import Edu from './components/edu';
 import Exp from './components/exp';
+import Projects from './components/projects';
 import { Col, Row } from 'antd';
 import { Icon } from 'semantic-ui-react';
 import "antd/dist/antd.css";
@@ -101,6 +102,17 @@ let expCSS = {
   fontSize: 64
 }
 
+let projCSS = {
+  backgroundColor: 'DarkCyan',
+  color: 'Azure',
+  width: 300,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 3,
+  textAlign: 'center',
+  fontSize: 64
+}
+
 export default function App() {
   return (
     <div className="App" style={backGroundCSS}>
@@ -149,6 +161,14 @@ export default function App() {
         </Col>
       </Row>
       <Exp/>
+
+      <Row justify="center" align="middle" 
+       style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
+        <Col span={24}>
+          <h1 style={projCSS}>Projects</h1>
+        </Col>
+      </Row>
+      <Projects/>
       
       <Row justify="center" align="middle" style={{backgroundColor: "LightCyan"}}>
         <Col span={12}>
