@@ -19,8 +19,8 @@ export default function Projects() {
     minWidth: 400,
     paddingBottom: 120,
     justify: 'center',
-    paddingLeft: "7%",
-    paddingRight: "7%"
+    paddingLeft: "8%",
+    paddingRight: "8%"
   };
 
   return (
@@ -35,7 +35,7 @@ export default function Projects() {
           </Header>
           <Divider/>
           <Header sub style={{color:'Azure', fontSize: 16}}>
-            An aggregated calandar that allows query of all events happening at Carnegie Mellon
+            An aggregated calendar that allows query of all events happening at Carnegie Mellon
           </Header>
           <List as='ul' style={{fontSize:18}}>
               <List.Item style={{paddingBottom:15}}>
