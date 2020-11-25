@@ -9,16 +9,14 @@ export default function Basics() {
     minWidth: 367,
     overflow: 'auto',
     textOverflow: 'ellipsis',
-    fontSize: 18,
-    fontWeight: "bold",
+    fontSize: 17,
     textAlign: 'left',
     height: 400,
-    borderRadius: 24,
+    borderRadius: 20,
     borderStyle: "hidden outset outset hidden",
     borderColor: "Teal",
     borderWidth: 8,
-    padding: 25,
-    letterSpacing: 0.4,
+    padding: 20,
     display: 'block',
     margin: 'auto'
   }
@@ -49,7 +47,8 @@ export default function Basics() {
         <List.Item>
           <List.Icon name='mail' />
           <List.Content>
-            <a href='mailto:xinyao@andrew.cmu.edu'>xinyao@andrew.cmu.edu</a>
+            <a href='mailto:xinyao@andrew.cmu.edu' 
+             target="_blank" rel="noopener noreferrer">xinyao@andrew.cmu.edu</a>
           </List.Content>
         </List.Item>
         <List.Item>

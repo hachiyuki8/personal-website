@@ -12,14 +12,11 @@ export default function SFLS() {
   let textCSS = {
     fontSize: 22,
     color: "azure",
-    fontWeight: "bold",
-    letterSpacing: 0.5
   }
 
   let text2CSS = {
     fontSize: 16,
     color: "azure",
-    letterSpacing: 1
   }
 
   const [activeIndex, setActiveIndex] = useState([]);
@@ -43,7 +40,7 @@ export default function SFLS() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:24, height:24, backgroundColor: "LightCyan"}}/>
+             style={{width:20, height:20, backgroundColor: "LightCyan"}}/>
             <TimelineConnector style={{height:30}}/>
           </TimelineSeparator>
           <TimelineContent style={textCSS}>
@@ -57,7 +54,7 @@ export default function SFLS() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
+             style={{width:16, height:16, backgroundColor: "PowderBlue"}}/>
             <TimelineConnector style={{height:60, backgroundColor:"darkcyan"}}/>
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -68,7 +65,7 @@ export default function SFLS() {
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:24, height:24, backgroundColor: "LightCyan"}}/>
+             style={{width:20, height:20, backgroundColor: "LightCyan"}}/>
             <TimelineConnector style={{height:30}}/>
           </TimelineSeparator>
           <TimelineContent style={textCSS}>
@@ -82,7 +79,7 @@ export default function SFLS() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
+             style={{width:16, height:16, backgroundColor: "PowderBlue"}}/>
             <TimelineConnector style={{height:60}}/>
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -112,7 +109,7 @@ export default function SFLS() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
+             style={{width:16, height:16, backgroundColor: "PowderBlue"}}/>
             <TimelineConnector style={{height:60}}/>
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -142,7 +139,7 @@ export default function SFLS() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
+             style={{width:16, height:16, backgroundColor: "PowderBlue"}}/>
             <TimelineConnector style={{height:60}}/>
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -172,7 +169,7 @@ export default function SFLS() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
+             style={{width:16, height:16, backgroundColor: "PowderBlue"}}/>
             <TimelineConnector style={{height:60}}/>
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -202,7 +199,7 @@ export default function SFLS() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-             style={{width:20, height:20, backgroundColor: "PowderBlue"}}/>
+             style={{width:16, height:16, backgroundColor: "PowderBlue"}}/>
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Student Career Development Center<br/><br/>

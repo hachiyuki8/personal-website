@@ -5,6 +5,8 @@ import Basics from "./components/basics";
 import Skills from './components/skills';
 import Contact from './components/contact';
 import Edu from './components/edu';
+import Exp from './components/exp';
+import Projects from './components/projects';
 import { Col, Row } from 'antd';
 import { Icon } from 'semantic-ui-react';
 import "antd/dist/antd.css";
@@ -31,7 +33,7 @@ let backGroundCSS = {
 let photoCSS = {
   height: "400px",
   minWidth: "300px",
-  borderRadius: 24,
+  borderRadius: 20,
   width: '45%',
   display: 'block',
   margin: 'auto'
@@ -40,7 +42,7 @@ let photoCSS = {
 let skillCSS = {
   backgroundColor: 'Azure',
   color: 'Teal',
-  width: 250,
+  width: 300,
   display: 'block',
   margin: 'auto',
   letterSpacing: 3,
@@ -89,6 +91,28 @@ let eduCSS = {
   fontSize: 64
 }
 
+let expCSS = {
+  backgroundColor: 'Azure',
+  color: 'Teal',
+  width: 360,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 2,
+  textAlign: 'center',
+  fontSize: 64
+}
+
+let projCSS = {
+  backgroundColor: 'DarkCyan',
+  color: 'Azure',
+  width: 300,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 3,
+  textAlign: 'center',
+  fontSize: 64
+}
+
 export default function App() {
   return (
     <div className="App" style={backGroundCSS}>
@@ -111,7 +135,7 @@ export default function App() {
           </Col>
       </Row>
 
-      <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:120}}>
+      <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100}}>
         <Col span={24}>
           <h1 style={skillCSS}>Skills</h1>
         </Col>
@@ -119,20 +143,33 @@ export default function App() {
       <Skills/>
 
       <Row justify="center" align="middle" 
-       style={{backgroundColor: "DarkCyan", paddingTop:120}}>
+       style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
           <h1 style={eduCSS}>Education</h1>
         </Col>
       </Row>
       <Row justify="center" align="middle" 
-       style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:120}}>
+       style={{backgroundColor: "DarkCyan", paddingBottom:120}}>
         <Col xl={{span:12}} lg={{span:15}} md={{span:18}} sm={{span:21}} xs={{span:24}}>
           <Edu/>
         </Col>
-
       </Row>
-      
 
+      <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
+        <Col span={24}>
+          <h1 style={expCSS}>Experience</h1>
+        </Col>
+      </Row>
+      <Exp/>
+
+      <Row justify="center" align="middle" 
+       style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
+        <Col span={24}>
+          <h1 style={projCSS}>Projects</h1>
+        </Col>
+      </Row>
+      <Projects/>
+      
       <Row justify="center" align="middle" style={{backgroundColor: "LightCyan"}}>
         <Col span={12}>
           <h1 style={bottomLCSS}>Developed by: Joanna Yao</h1>     
@@ -145,6 +182,7 @@ export default function App() {
           </a>
         </Col>
       </Row>
+
     </div>
   );
 }

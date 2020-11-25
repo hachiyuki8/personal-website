@@ -14,21 +14,17 @@ export default function CMU() {
   let textCSS = {
     fontSize: 22,
     color: "azure",
-    fontWeight: "bold",
-    letterSpacing: 0.5,
   }
 
   let text2CSS = {
     fontSize: 16,
     color: "azure",
-    letterSpacing: 1
   }
 
   let courseCSS = {
     fontSize: 22,
     color: "azure",
     fontWeight: "bold",
-    letterSpacing: 0.5,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -54,7 +50,7 @@ export default function CMU() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-              style={{ width: 24, height: 24, backgroundColor: "LightCyan" }} />
+              style={{ width: 20, height: 20, backgroundColor: "LightCyan" }} />
             <TimelineConnector style={{ height: 30 }} />
           </TimelineSeparator>
           <TimelineContent style={textCSS}>
@@ -68,7 +64,7 @@ export default function CMU() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+              style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
             <TimelineConnector style={{ height: 120 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -89,7 +85,7 @@ export default function CMU() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+              style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
             <TimelineConnector style={{ height: 60, backgroundColor: "darkcyan" }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -100,7 +96,7 @@ export default function CMU() {
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot
-              style={{ width: 24, height: 24, backgroundColor: "LightCyan" }} />
+              style={{ width: 20, height: 20, backgroundColor: "LightCyan" }} />
             <TimelineConnector style={{ height: 30 }} />
           </TimelineSeparator>
           <TimelineContent style={textCSS}>
@@ -114,7 +110,7 @@ export default function CMU() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+              style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
             <TimelineConnector style={{ height: 60 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -129,7 +125,7 @@ export default function CMU() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+              style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
             <TimelineConnector style={{ height: 60 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
@@ -149,26 +145,11 @@ export default function CMU() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
-              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
-            <TimelineConnector style={{ height: 60 }} />
-          </TimelineSeparator>
-          <TimelineContent style={text2CSS}>
-            Data Science Club<br /><br />
-            Project Member
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent style={text2CSS}>
-            Aug 2020 - Present
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot
-              style={{ width: 20, height: 20, backgroundColor: "PowderBlue" }} />
+              style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
             <TimelineConnector style={{ height: 75, backgroundColor: "darkcyan" }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
-            Game Creation Society<br /><br />
+            Data Science Club<br /><br />
             Project Member
           </TimelineContent>
         </TimelineItem>

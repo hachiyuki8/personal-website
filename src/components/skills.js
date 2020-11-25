@@ -9,10 +9,9 @@ export default function Skills() {
     paddingTop: 5,
     paddingBottom: 5,
     textAlign: 'left',
-    fontWeight: 'bold',
-    borderRadius: 20,
+    borderRadius: 10,
     textOverflow: 'ellipsis',
-    letterSpacing: 0.5,
+    paddingRight: 5
   }
   
   let gridStyle = {
@@ -40,8 +39,8 @@ export default function Skills() {
             <Card title="Programming" bordered={false} style={cardCSS}>
               <ul>
                 <li>Language: Python, C, R,
-                    JavaScript, HTML/CSS, SML </li> <br/><br/>
-                <li>Framework: PyTorch, React </li>
+                    JavaScript, HTML/CSS, SQL, Standard ML </li> <br/><br/>
+                <li>Framework: React, PyTorch </li>
               </ul>
             </Card>
           </Col>
@@ -60,8 +59,8 @@ export default function Skills() {
             <Card title="General" bordered={false} style={cardCSS}>
             <ul>
                 <li>Data Analysis </li> <br/><br/>
-                <li>Video Editing </li> <br/><br/>
-                <li>Tutoring </li>
+                <li>Web Development</li> <br/><br/>
+                <li>Video Editing </li>
               </ul>
             </Card>
           </Col>

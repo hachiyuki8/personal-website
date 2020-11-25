@@ -1,6 +1,7 @@
 .App {
-  font: normal 16px Lato;
-  letter-spacing: 0.4px;
+  font-family: 'Jost';
+  font-size: 16px;
+  letter-spacing: 1.5px;
 }
 
 .App-logo {
@@ -55,8 +56,7 @@
   color: azure;
   text-align: center;
   font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .ant-card-body {
