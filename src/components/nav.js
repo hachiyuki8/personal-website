@@ -1,6 +1,7 @@
 import React, { useState, useRef, scrollToRef } from 'react';
-import { IdcardOutlined, ReadOutlined, TeamOutlined, FileDoneOutlined} from '@ant-design/icons';
 import { Menu } from 'antd';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUniversity, faTags, faAddressCard, faLaptopHouse, faArchive } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Nav(props) {
@@ -32,17 +33,20 @@ export default function Nav(props) {
         mode="horizontal"
         style={navCSS}
       >
-        <Menu.Item key="about" icon={<IdcardOutlined />}>
-          About
+        <Menu.Item key="about" icon={<FontAwesomeIcon icon={faAddressCard} />}>
+          &nbsp;About
         </Menu.Item>
-        <Menu.Item key="education" icon={<ReadOutlined />}>
-          Education
+        <Menu.Item key="skills" icon={<FontAwesomeIcon icon={faTags} />}>
+          &nbsp;Skills
         </Menu.Item>
-        <Menu.Item key="experience" icon={<TeamOutlined />}>
-          Experience
+        <Menu.Item key="education" icon={<FontAwesomeIcon icon={faUniversity} />}>
+          &nbsp;Education
         </Menu.Item>
-        <Menu.Item key="projects" icon={<FileDoneOutlined />}>
-          Projects
+        <Menu.Item key="experience" icon={<FontAwesomeIcon icon={faLaptopHouse} />}>
+          &nbsp;Experience
+        </Menu.Item>
+        <Menu.Item key="projects" icon={<FontAwesomeIcon icon={faArchive} />}>
+          &nbsp;Projects
         </Menu.Item>
       </Menu>
     </>

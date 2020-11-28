@@ -1,6 +1,8 @@
 import React from 'react';
 import { Header, List, Divider, Icon } from 'semantic-ui-react';
 import { Col, Row } from 'antd';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbtack } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Projects() {
@@ -49,11 +51,11 @@ export default function Projects() {
           </Header>
           <List as='ul' style={{fontSize:18}}>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
-                <Icon name='tasks'/>
+                <FontAwesomeIcon icon={faThumbtack} />
                 &nbsp;Designed main-page layout. 
               </List.Item>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
-                <Icon name='tasks'/>
+                <FontAwesomeIcon icon={faThumbtack} />
                 &nbsp;Implemented search functionality and connected frontend to backend.
               </List.Item>
           </List>
@@ -72,15 +74,15 @@ export default function Projects() {
           </Header>
           <List as='ul' style={{fontSize:18}}>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
-                <Icon name='tasks'/>
+                <FontAwesomeIcon icon={faThumbtack} />
                 &nbsp;Implemented TensorBoard automation on Google Colab.
               </List.Item>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
-                <Icon name='tasks'/>
+                <FontAwesomeIcon icon={faThumbtack} />
                 &nbsp;Implemented GPU support for model training.
               </List.Item>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
-                <Icon name='tasks'/>
+                <FontAwesomeIcon icon={faThumbtack} />
                 &nbsp;Tested learning efficiency under different loss functions and learning rates.
               </List.Item>
           </List>
@@ -115,7 +117,7 @@ export default function Projects() {
           </Header>
           <List as='ul' style={{fontSize:18}}>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
-                <Icon name='tasks'/>
+                <FontAwesomeIcon icon={faThumbtack} />
                 &nbsp;Carried out the study to investigate weibo users' standard of judging the validity of online information to understand the psychological pattern behind the spread of rumors.
               </List.Item>
           </List>
