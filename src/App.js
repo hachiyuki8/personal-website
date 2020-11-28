@@ -74,7 +74,7 @@ let bottomRCSS = {
 let eduCSS = {
   backgroundColor: 'DarkCyan',
   color: 'Azure',
-  width: 420,
+  width: 300,
   display: 'block',
   margin: 'auto',
   letterSpacing: 3,
@@ -96,7 +96,7 @@ let skillCSS = {
 let expCSS = {
   backgroundColor: 'Azure',
   color: 'Teal',
-  width: 450,
+  width: 300,
   display: 'block',
   margin: 'auto',
   letterSpacing: 2,
@@ -107,7 +107,7 @@ let expCSS = {
 let projCSS = {
   backgroundColor: 'DarkCyan',
   color: 'Azure',
-  width: 360,
+  width: 300,
   display: 'block',
   margin: 'auto',
   letterSpacing: 3,
@@ -140,8 +140,7 @@ export default function App() {
       <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100}}>
         <Col span={24}>
           <h1 style={skillCSS}>
-            <FontAwesomeIcon icon={faList} />
-            &nbsp;&nbsp;Skills
+            Skills
           </h1>
         </Col>
       </Row>
@@ -151,8 +150,7 @@ export default function App() {
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
           <h1 style={eduCSS}>
-            <FontAwesomeIcon icon={faUniversity} />
-            &nbsp;&nbsp;Education
+            Education
           </h1>
         </Col>
       </Row>
@@ -166,8 +164,7 @@ export default function App() {
       <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
           <h1 style={expCSS}>
-            <FontAwesomeIcon icon={faLaptopHouse} />
-            &nbsp;&nbsp;Experience
+            Experience
           </h1>
         </Col>
       </Row>
@@ -177,8 +174,7 @@ export default function App() {
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
           <h1 style={projCSS}>
-            <FontAwesomeIcon icon={faArchive} />
-            &nbsp;&nbsp;Projects
+            Projects
           </h1>
         </Col>
       </Row>

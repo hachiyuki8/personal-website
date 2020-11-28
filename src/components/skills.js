@@ -11,12 +11,11 @@ export default function Skills() {
     textAlign: 'left',
     borderRadius: 10,
     textOverflow: 'ellipsis',
-    paddingRight: 5
   }
   
   let gridStyle = {
     width: '50%',
-    minWidth: 400,
+    minWidth: 360,
     paddingTop: 30,
     paddingBottom: 30,
     justify: 'center'
@@ -48,9 +47,9 @@ export default function Skills() {
           <Col span={6} style={gridStyle}>
             <Card title="Software" bordered={false} style={cardCSS}>
               <ul>
-                <li>Unreal Engine (UE4)</li><br/>
+                <li>Unreal Engine</li><br/>
                 <li>Adobe: Premiere, InDesign, Photoshop, After Effect </li><br/>
-                <li>Microsoft Office: <br/> Word, Excel, PowerPoint </li>
+                <li>Microsoft Office</li>
               </ul>
             </Card>
           </Col>
