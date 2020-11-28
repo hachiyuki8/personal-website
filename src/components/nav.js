@@ -1,7 +1,7 @@
 import React, { useState, useRef, scrollToRef } from 'react';
 import { Menu } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUniversity, faTags, faAddressCard, faLaptopHouse, faArchive } from '@fortawesome/free-solid-svg-icons'
+import { faUniversity, faList, faAddressCard, faLaptopHouse, faArchive } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Nav(props) {
@@ -36,7 +36,7 @@ export default function Nav(props) {
         <Menu.Item key="about" icon={<FontAwesomeIcon icon={faAddressCard} />}>
           &nbsp;About
         </Menu.Item>
-        <Menu.Item key="skills" icon={<FontAwesomeIcon icon={faTags} />}>
+        <Menu.Item key="skills" icon={<FontAwesomeIcon icon={faList} />}>
           &nbsp;Skills
         </Menu.Item>
         <Menu.Item key="education" icon={<FontAwesomeIcon icon={faUniversity} />}>

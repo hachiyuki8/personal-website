@@ -9,6 +9,8 @@ import Exp from './components/exp';
 import Projects from './components/projects';
 import { Col, Row } from 'antd';
 import { Icon } from 'semantic-ui-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUniversity, faList, faAddressCard, faLaptopHouse, faArchive } from '@fortawesome/free-solid-svg-icons'
 import "antd/dist/antd.css";
 import "./index.css";
 import './App.css';
@@ -37,17 +39,6 @@ let photoCSS = {
   width: '45%',
   display: 'block',
   margin: 'auto'
-}
-
-let skillCSS = {
-  backgroundColor: 'Azure',
-  color: 'Teal',
-  width: 300,
-  display: 'block',
-  margin: 'auto',
-  letterSpacing: 3,
-  textAlign: 'center',
-  fontSize: 64
 }
 
 let gridStyle = {
@@ -83,6 +74,17 @@ let bottomRCSS = {
 let eduCSS = {
   backgroundColor: 'DarkCyan',
   color: 'Azure',
+  width: 420,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 3,
+  textAlign: 'center',
+  fontSize: 64
+}
+
+let skillCSS = {
+  backgroundColor: 'Azure',
+  color: 'Teal',
   width: 300,
   display: 'block',
   margin: 'auto',
@@ -94,7 +96,7 @@ let eduCSS = {
 let expCSS = {
   backgroundColor: 'Azure',
   color: 'Teal',
-  width: 360,
+  width: 450,
   display: 'block',
   margin: 'auto',
   letterSpacing: 2,
@@ -105,7 +107,7 @@ let expCSS = {
 let projCSS = {
   backgroundColor: 'DarkCyan',
   color: 'Azure',
-  width: 300,
+  width: 360,
   display: 'block',
   margin: 'auto',
   letterSpacing: 3,
@@ -137,7 +139,10 @@ export default function App() {
 
       <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100}}>
         <Col span={24}>
-          <h1 style={skillCSS}>Skills</h1>
+          <h1 style={skillCSS}>
+            <FontAwesomeIcon icon={faList} />
+            &nbsp;&nbsp;Skills
+          </h1>
         </Col>
       </Row>
       <Skills/>
@@ -145,7 +150,10 @@ export default function App() {
       <Row justify="center" align="middle" 
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
-          <h1 style={eduCSS}>Education</h1>
+          <h1 style={eduCSS}>
+            <FontAwesomeIcon icon={faUniversity} />
+            &nbsp;&nbsp;Education
+          </h1>
         </Col>
       </Row>
       <Row justify="center" align="middle" 
@@ -157,7 +165,10 @@ export default function App() {
 
       <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
-          <h1 style={expCSS}>Experience</h1>
+          <h1 style={expCSS}>
+            <FontAwesomeIcon icon={faLaptopHouse} />
+            &nbsp;&nbsp;Experience
+          </h1>
         </Col>
       </Row>
       <Exp/>
@@ -165,7 +176,10 @@ export default function App() {
       <Row justify="center" align="middle" 
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
-          <h1 style={projCSS}>Projects</h1>
+          <h1 style={projCSS}>
+            <FontAwesomeIcon icon={faArchive} />
+            &nbsp;&nbsp;Projects
+          </h1>
         </Col>
       </Row>
       <Projects/>
