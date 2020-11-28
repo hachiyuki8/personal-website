@@ -207,7 +207,7 @@ export default function Contact() {
                 style={resumeCSS}
                 type="primary"
                 shape="round"
-                onClick= {() => openInNew("https://drive.google.com/file/d/1BEhiz45BL9BM8nS5eoLMsX327sspZK7e/view?usp=sharing")}
+                onClick= {() => openInNew("https://drive.google.com/file/d/1cXevzro0nSilto_iA7L9Q77hKwRP3KCo/view?usp=sharing")}
                 icon = {<FontAwesomeIcon icon={faDownload} size="2x"/>}
               >
                 <b style={{fontSize: 20, letterSpacing: 1}}>&nbsp;&nbsp;Resume</b>

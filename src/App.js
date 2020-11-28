@@ -125,7 +125,7 @@ export default function App() {
       
       <Row justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
           <Col span={8} style={gridStyle}>
-            <img alt="loading" style={photoCSS} src={Photo} />
+            <img alt="loading" style={photoCSS} src={Photo}/>
           </Col>
           <Col span={8} style={gridStyle}>
             <Basics/>
