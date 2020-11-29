@@ -118,11 +118,21 @@ let projCSS = {
 export default function App() {
   return (
     <div className="App" style={backGroundCSS}>
-      <Row>
+      {/* <Row>
         <div style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto'}}>
           <h1 style={titleCSS}>Joanna Yao</h1>
           <Nav style={{ float: 'left'}}/>
         </div>
+      </Row> */}
+
+      <Row justify="center" align="middle" style={{backgroundColor: "Azure"}}>
+        <Col span={24}>
+          <h1 style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto',
+          backgroundColor:'LightCyan', height: 75, color: 'Teal', paddingTop: 20,
+          paddingLeft: 36, paddingRight: 16, letterSpacing: 1.5, fontSize: 24}}>
+            Joanna Yao
+          </h1>
+        </Col>
       </Row>
       
       <Row justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
