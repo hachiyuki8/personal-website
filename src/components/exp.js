@@ -83,7 +83,7 @@ export default function Exp() {
           </Header>
           <Divider/>
           <Header style={subStyle}>
-            Python Teaching Assistant (Sep 2018 - Feb 2019)
+            Python Teaching Assistant (Dec 2018 - Feb 2019)
           </Header>
           <List as='ul' style={{fontSize:18}}>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
