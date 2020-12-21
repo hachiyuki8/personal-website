@@ -1,4 +1,3 @@
-import { Menu } from 'antd';
 import React from 'react'
 import { Tab } from 'semantic-ui-react'
 import CMU from './cmu';

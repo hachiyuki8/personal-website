@@ -39,17 +39,6 @@ let photoCSS = {
   margin: 'auto'
 }
 
-let skillCSS = {
-  backgroundColor: 'Azure',
-  color: 'Teal',
-  width: 300,
-  display: 'block',
-  margin: 'auto',
-  letterSpacing: 3,
-  textAlign: 'center',
-  fontSize: 64
-}
-
 let gridStyle = {
   minWidth: 500,
   paddingTop: 50,
@@ -91,10 +80,21 @@ let eduCSS = {
   fontSize: 64
 }
 
+let skillCSS = {
+  backgroundColor: 'Azure',
+  color: 'Teal',
+  width: 300,
+  display: 'block',
+  margin: 'auto',
+  letterSpacing: 3,
+  textAlign: 'center',
+  fontSize: 64
+}
+
 let expCSS = {
   backgroundColor: 'Azure',
   color: 'Teal',
-  width: 360,
+  width: 300,
   display: 'block',
   margin: 'auto',
   letterSpacing: 2,
@@ -123,9 +123,9 @@ export default function App() {
         </div>
       </Row>
       
-      <Row justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
+      <Row name="about" justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
           <Col span={8} style={gridStyle}>
-            <img alt="loading" style={photoCSS} src={Photo} />
+            <img alt="loading" style={photoCSS} src={Photo}/>
           </Col>
           <Col span={8} style={gridStyle}>
             <Basics/>
@@ -135,17 +135,21 @@ export default function App() {
           </Col>
       </Row>
 
-      <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100}}>
+      <Row name="skills" justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100}}>
         <Col span={24}>
-          <h1 style={skillCSS}>Skills</h1>
+          <h1 style={skillCSS}>
+            Skills
+          </h1>
         </Col>
       </Row>
       <Skills/>
 
-      <Row justify="center" align="middle" 
+      <Row name="edu" justify="center" align="middle" 
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
-          <h1 style={eduCSS}>Education</h1>
+          <h1 style={eduCSS}>
+            Education
+          </h1>
         </Col>
       </Row>
       <Row justify="center" align="middle" 
@@ -155,17 +159,21 @@ export default function App() {
         </Col>
       </Row>
 
-      <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
+      <Row name="exp" justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
-          <h1 style={expCSS}>Experience</h1>
+          <h1 style={expCSS}>
+            Experience
+          </h1>
         </Col>
       </Row>
       <Exp/>
 
-      <Row justify="center" align="middle" 
+      <Row name="projects" justify="center" align="middle" 
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
-          <h1 style={projCSS}>Projects</h1>
+          <h1 style={projCSS}>
+            Projects
+          </h1>
         </Col>
       </Row>
       <Projects/>

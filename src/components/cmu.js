@@ -6,7 +6,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
-import { Accordion, Icon, List } from 'semantic-ui-react'
+import { Accordion, Icon } from 'semantic-ui-react'
 import Course from './course';
 
 
@@ -106,21 +106,6 @@ export default function CMU() {
 
         <TimelineItem>
           <TimelineOppositeContent style={text2CSS}>
-            Aug 2019 - Present
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot
-              style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
-            <TimelineConnector style={{ height: 60 }} />
-          </TimelineSeparator>
-          <TimelineContent style={text2CSS}>
-            CMU Esports - Competitive Overwatch<br /><br />
-            A Team Member
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent style={text2CSS}>
             Aug 2020 - Present
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -146,11 +131,26 @@ export default function CMU() {
           <TimelineSeparator>
             <TimelineDot
               style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
-            <TimelineConnector style={{ height: 75, backgroundColor: "darkcyan" }} />
+            <TimelineConnector style={{ height: 60 }} />
           </TimelineSeparator>
           <TimelineContent style={text2CSS}>
             Data Science Club<br /><br />
             Project Member
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent style={text2CSS}>
+            Aug 2019 - Present
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot
+              style={{ width: 16, height: 16, backgroundColor: "PowderBlue" }} />
+            <TimelineConnector style={{ height: 75, backgroundColor: "darkcyan" }} />
+          </TimelineSeparator>
+          <TimelineContent style={text2CSS}>
+            CMU Esports - Competitive Overwatch<br /><br />
+            A Team Member
           </TimelineContent>
         </TimelineItem>
 
