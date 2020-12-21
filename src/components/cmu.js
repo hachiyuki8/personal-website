@@ -6,7 +6,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
-import { Accordion, Icon, List } from 'semantic-ui-react'
+import { Accordion, Icon } from 'semantic-ui-react'
 import Course from './course';
 
 

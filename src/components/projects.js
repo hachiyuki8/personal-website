@@ -1,21 +1,11 @@
 import React from 'react';
-import { Header, List, Divider, Icon } from 'semantic-ui-react';
+import { Header, List, Divider } from 'semantic-ui-react';
 import { Col, Row } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbtack } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Projects() {
-  let cardCSS = {
-    backgroundColor: 'Azure',
-    color: 'Teal',
-    paddingTop: 5,
-    paddingBottom: 5,
-    textAlign: 'left',
-    borderRadius: 20,
-    textOverflow: 'ellipsis',
-  }
-
   let gridStyle = {
     width: '50%',
     minWidth: 400,
