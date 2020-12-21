@@ -9,8 +9,6 @@ import Exp from './components/exp';
 import Projects from './components/projects';
 import { Col, Row } from 'antd';
 import { Icon } from 'semantic-ui-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUniversity, faList, faAddressCard, faLaptopHouse, faArchive } from '@fortawesome/free-solid-svg-icons'
 import "antd/dist/antd.css";
 import "./index.css";
 import './App.css';
@@ -118,24 +116,14 @@ let projCSS = {
 export default function App() {
   return (
     <div className="App" style={backGroundCSS}>
-      {/* <Row>
+      <Row>
         <div style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto'}}>
           <h1 style={titleCSS}>Joanna Yao</h1>
           <Nav style={{ float: 'left'}}/>
         </div>
-      </Row> */}
-
-      <Row justify="center" align="middle" style={{backgroundColor: "Azure"}}>
-        <Col span={24}>
-          <h1 style={{zIndex: 1, position: "fixed", width: "100%", overflowX: 'auto',
-          backgroundColor:'LightCyan', height: 75, color: 'Teal', paddingTop: 20,
-          paddingLeft: 36, paddingRight: 16, letterSpacing: 1.5, fontSize: 24}}>
-            Joanna Yao
-          </h1>
-        </Col>
       </Row>
       
-      <Row justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
+      <Row name="about" justify="center" align="middle" style={{paddingTop:150, paddingBottom:90}}>
           <Col span={8} style={gridStyle}>
             <img alt="loading" style={photoCSS} src={Photo}/>
           </Col>
@@ -147,7 +135,7 @@ export default function App() {
           </Col>
       </Row>
 
-      <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100}}>
+      <Row name="skills" justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100}}>
         <Col span={24}>
           <h1 style={skillCSS}>
             Skills
@@ -156,7 +144,7 @@ export default function App() {
       </Row>
       <Skills/>
 
-      <Row justify="center" align="middle" 
+      <Row name="edu" justify="center" align="middle" 
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
           <h1 style={eduCSS}>
@@ -171,7 +159,7 @@ export default function App() {
         </Col>
       </Row>
 
-      <Row justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
+      <Row name="exp" justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
           <h1 style={expCSS}>
             Experience
@@ -180,7 +168,7 @@ export default function App() {
       </Row>
       <Exp/>
 
-      <Row justify="center" align="middle" 
+      <Row name="projects" justify="center" align="middle" 
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
           <h1 style={projCSS}>
