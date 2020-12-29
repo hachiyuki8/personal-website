@@ -28,6 +28,19 @@ export default function Projects() {
   return (
     <>
       <Row justify="center" style={{backgroundColor: 'DarkCyan', color: 'Azure'}}>
+      <Col span={12} style={gridStyle}>
+          <Header style={{color:'Azure', fontSize:22, textDecoration:'underline'}}
+           href="https://github.com/hachiyuki8/personal-website"
+           target="_blank" rel="noopener noreferrer"
+          >
+            Personal Website
+          </Header>
+          <Divider/>
+          <Header style={subStyle}>
+            A personal website built with React
+          </Header>
+        </Col>
+
         <Col span={12} style={gridStyle}>
           <Header style={{color:'Azure', fontSize:22, textDecoration:'underline'}}
            href="https://github.com/ScottyLabs/CarnegieCalendar"
@@ -46,9 +59,24 @@ export default function Projects() {
               </List.Item>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
                 <FontAwesomeIcon icon={faThumbtack} />
-                &nbsp;Implemented search functionality and connected frontend to backend.
+                &nbsp;Implemented search functionality and connected frontend to the database.
               </List.Item>
           </List>
+        </Col>
+      </Row>
+
+      <Row justify="center" style={{backgroundColor: 'DarkCyan', color: 'Azure'}}>
+        <Col span={12} style={gridStyle}>
+          <Header style={{color:'Azure', fontSize:22, textDecoration:'underline'}}
+           href="http://www.stat.cmu.edu/capstoneresearch/GOODS-N_290_Poster.pdf"
+           target="_blank" rel="noopener noreferrer"
+          >
+            Predicting Galaxy Mass in GOODS-North
+          </Header>
+          <Divider/>
+          <Header style={subStyle}>
+            An astrophysics data project that uses machine learning to predict galaxy mass in the GOODS-North field from sky coordinates and brightness measurements.
+          </Header>
         </Col>
 
         <Col span={12} style={gridStyle}>
@@ -82,20 +110,6 @@ export default function Projects() {
       <Row justify="center" style={{backgroundColor: 'DarkCyan', color: 'Azure'}}>
         <Col span={12} style={gridStyle}>
           <Header style={{color:'Azure', fontSize:22, textDecoration:'underline'}}
-           href="https://github.com/hachiyuki8/personal-website"
-           target="_blank" rel="noopener noreferrer"
-          >
-            Personal Website
-          </Header>
-          <Divider/>
-          <Header style={subStyle}>
-            A personal website built with React
-          </Header>
-
-        </Col>
-
-        <Col span={12} style={gridStyle}>
-          <Header style={{color:'Azure', fontSize:22, textDecoration:'underline'}}
            href="https://github.com/hachiyuki8/weibo-report-2018"
            target="_blank" rel="noopener noreferrer"
           >
@@ -111,6 +125,9 @@ export default function Projects() {
                 &nbsp;Carried out the study to investigate weibo users' standard of judging the validity of online information to understand the psychological pattern behind the spread of rumors.
               </List.Item>
           </List>
+        </Col>
+
+        <Col span={12} style={gridStyle}>
         </Col>
       </Row>
     </>
