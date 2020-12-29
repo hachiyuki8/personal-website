@@ -165,7 +165,7 @@ export default function SFLS() {
 
         <TimelineItem>
           <TimelineOppositeContent style={text2CSS}>
-            Sep 2017 - Jun 2018
+            Sep 2017 - Jun 2019
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
@@ -195,7 +195,7 @@ export default function SFLS() {
 
         <TimelineItem>
           <TimelineOppositeContent style={text2CSS}>
-            Jan 2018 - Jun 2018
+            Jan 2018 - Jun 2019
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot
