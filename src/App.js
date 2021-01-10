@@ -144,6 +144,25 @@ export default function App() {
       </Row>
       <Skills/>
 
+      <Row name="projects" justify="center" align="middle" 
+       style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
+        <Col span={24}>
+          <h1 style={projCSS}>
+            Projects
+          </h1>
+        </Col>
+      </Row>
+      <Projects/>
+
+      <Row name="exp" justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
+        <Col span={24}>
+          <h1 style={expCSS}>
+            Experience
+          </h1>
+        </Col>
+      </Row>
+      <Exp/>
+
       <Row name="edu" justify="center" align="middle" 
        style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
         <Col span={24}>
@@ -158,25 +177,6 @@ export default function App() {
           <Edu/>
         </Col>
       </Row>
-
-      <Row name="exp" justify="center" align="middle" style={{backgroundColor: "Azure", paddingTop:100, paddingBottom:100}}>
-        <Col span={24}>
-          <h1 style={expCSS}>
-            Experience
-          </h1>
-        </Col>
-      </Row>
-      <Exp/>
-
-      <Row name="projects" justify="center" align="middle" 
-       style={{backgroundColor: "DarkCyan", paddingTop:100, paddingBottom:100}}>
-        <Col span={24}>
-          <h1 style={projCSS}>
-            Projects
-          </h1>
-        </Col>
-      </Row>
-      <Projects/>
       
       <Row justify="center" align="middle" style={{backgroundColor: "LightCyan"}}>
         <Col span={12}>

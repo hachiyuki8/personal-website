@@ -38,7 +38,7 @@ export default function Basics() {
         </List.Item>
         <List.Item>
           <List.Icon name='book'/>
-          <List.Content>Statistics and Machine Learning</List.Content>
+          <List.Content>Information Systems</List.Content>
         </List.Item>
         <List.Item>
           <List.Icon name='book'/>
