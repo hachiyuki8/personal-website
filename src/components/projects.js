@@ -50,16 +50,16 @@ export default function Projects() {
           </Header>
           <Divider/>
           <Header style={subStyle}>
-            An aggregated calendar that allows query of all events at Carnegie Mellon
+            An aggregated calendar that allows query of all events happening at Carnegie Mellon
           </Header>
           <List as='ul' style={{fontSize:18}}>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
                 <FontAwesomeIcon icon={faThumbtack} />
-                &nbsp;Designed main-page layout. 
+                &nbsp;Designed a responsive main-page using semantic react that allows flexible searching input.  
               </List.Item>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
                 <FontAwesomeIcon icon={faThumbtack} />
-                &nbsp;Implemented search functionality and connected frontend to the database.
+                &nbsp;Implemented searching functionality and connected the frontend to the database based on MongoDB to display up-to-date results scraped from 100+ sources.
               </List.Item>
           </List>
         </Col>
@@ -75,8 +75,14 @@ export default function Projects() {
           </Header>
           <Divider/>
           <Header style={subStyle}>
-            An astrophysics data project that uses machine learning to predict galaxy mass in the GOODS-North field from sky coordinates and brightness measurements.
+            An astrophysics data project that uses machine learning to predict galaxy mass from other information.
           </Header>
+          <List as='ul' style={{fontSize:18}}>
+              <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
+                <FontAwesomeIcon icon={faThumbtack} />
+                &nbsp;Trained 8 parametric regression models and non-parametric machine learning models to make accurate predictions and provide inferential statistics based on feature importance.
+              </List.Item>
+          </List>
         </Col>
 
         <Col span={12} style={gridStyle}>
@@ -93,15 +99,11 @@ export default function Projects() {
           <List as='ul' style={{fontSize:18}}>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
                 <FontAwesomeIcon icon={faThumbtack} />
-                &nbsp;Implemented TensorBoard automation on Google Colab.
+                &nbsp;Implemented TensorBoard automation on Google Colab that detects the current environment and automatically enables GPU support to achieve a more efficient model training workflow.
               </List.Item>
               <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
                 <FontAwesomeIcon icon={faThumbtack} />
-                &nbsp;Implemented GPU support for model training.
-              </List.Item>
-              <List.Item style={{paddingBottom:15, lineHeight:1.5}}>
-                <FontAwesomeIcon icon={faThumbtack} />
-                &nbsp;Tested learning efficiency under different loss functions and learning rates.
+                &nbsp;Tested and improved learning efficiency of the neural network by tuning hyperparameters such as loss functions and learning rates.
               </List.Item>
           </List>
         </Col>

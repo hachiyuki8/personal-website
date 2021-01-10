@@ -40,10 +40,10 @@ export default function Nav() {
             &nbsp;Skills
           </Link> 
         </Menu.Item>
-        <Menu.Item key="education" icon={<FontAwesomeIcon icon={faUniversity} />}>
-          <Link style={{color:'Teal'}} activeClass="active" className="edu" 
-           to="edu" smooth={true} duration={600}>
-            &nbsp;Education
+        <Menu.Item key="projects" icon={<FontAwesomeIcon icon={faArchive} />}>
+          <Link style={{color:'Teal'}} activeClass="active" className="projects" 
+           to="projects" smooth={true} duration={600}>
+            &nbsp;Projects
           </Link> 
         </Menu.Item>
         <Menu.Item key="experience" icon={<FontAwesomeIcon icon={faLaptopHouse} />}>
@@ -52,10 +52,10 @@ export default function Nav() {
             &nbsp;Experience
           </Link> 
         </Menu.Item>
-        <Menu.Item key="projects" icon={<FontAwesomeIcon icon={faArchive} />}>
-          <Link style={{color:'Teal'}} activeClass="active" className="projects" 
-           to="projects" smooth={true} duration={600}>
-            &nbsp;Projects
+        <Menu.Item key="education" icon={<FontAwesomeIcon icon={faUniversity} />}>
+          <Link style={{color:'Teal'}} activeClass="active" className="edu" 
+           to="edu" smooth={true} duration={600}>
+            &nbsp;Education
           </Link> 
         </Menu.Item>
       </Menu>
